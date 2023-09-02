@@ -1,85 +1,1714 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Beautiful Website Template</title>
-<style>
-  /* Reset some default styles */
-  body, h1, p {
-    margin: 0;
-    padding: 0;
-  }
+<!doctype html>
+<html lang="en-US">
 
-  /* Global styles */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-  }
+    <head>
+        <title>Warner Bros. Games</title>
 
-  /* Header styles */
-  header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 2rem 0;
-  }
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Welcome to the official WB Games website. Find our latest games, read news articles and search for your next career." />
 
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
 
-  /* Main content styles */
-  .content {
-    padding: 2rem;
-  }
 
-  /* Call to Action styles */
-  .cta {
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
-    padding: 4rem 0;
-  }
+        <meta property="og:title" content="Warner Bros. Games" />
+        <meta property="og:site_name" content="WB Games" />
+        <meta property="og:description" content="Welcome to the official WB Games website. Find our latest games, read news articles and search for your next career." />
+        <meta property="og:type" content="website" />
 
-  /* Footer styles */
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-  }
-</style>
-</head>
-<body>
-  <header>
-    <h1>Beautiful Website Template</h1>
-    <p>Your tagline goes here</p>
-  </header>
+        <meta property="og:image" content="https://cdn.wbgames.com/static/home-meta.jpg" />
+        <meta property="og:image:width" content="1440" />
+        <meta property="og:image:height" content="720" />
+        <meta property="og:locale" content="en_US" />
 
-  <div class="content">
-    <h2>Welcome to Our Website</h2>
-    <p>This is a simple and beautiful website template.</p>
-  </div>
 
-  <div class="cta">
-    <h2>Call to Action</h2>
-    <p>Engage your users with a compelling call to action.</p>
-    <button id="ctaButton">Click Me</button>
-  </div>
 
-  <footer>
-    <p>&copy; 2023 Beautiful Website. All rights reserved.</p>
-  </footer>
 
-  <script>
-    // JavaScript to make the website look cool
-    const ctaButton = document.getElementById("ctaButton");
 
-    ctaButton.addEventListener("click", () => {
-      alert("Button Clicked! This is where your interactive JavaScript can go.");
-    });
-  </script>
-</body>
+
+
+
+
+
+
+
+
+        <meta name="twitter:url" value="https://www.warnerbrosgames.org" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+        <link href="css/app.css" rel="stylesheet">
+
+
+
+        <style>
+            @media (min-width: 1200px){
+                body:not(#Home) header{
+                    background-image:url(https://cdn.wbgames.com/static/header.jpg)
+                }
+            }
+
+        </style>
+
+
+            <style>
+
+        #Home .content{
+            background-image:url(https://cdn.wbgames.com/static/home-background.jpg)
+        }
+
+    </style>
+
+
+    </head>
+
+    <body id="Home" class=" en-US">
+
+
+
+
+        <div id="app"  :storage="'https://cdn.wbgames.com/'" >
+
+            <header :class="{'is-fixed' : navIsFixed, 'mobile-search' : $store.state.mobileSearchOn, 'mobile-nav' : $store.state.showMobileMenu || $store.state.showEmailSignup}">
+
+    <a href="http://warnerbrosgames.org" class="logo d-none d-xl-block" aria-label="Visit home page of this site">
+
+        <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 348.87 487.74">
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <path d="M10.34,444.19h8.25L24.73,412l6.15,32.18h8.24l10.42-50.62H41.37l-6.44,32.91-6.22-32.91H21l-6.21,32.91L8.46,393.57H0l10.34,50.62Zm35.37,0h8.1l1.8-9.47H66.9l1.8,9.47h8.39L66.9,393.57h-11L45.71,444.19Zm11.42-17.28,4.12-21.62,4.13,21.62Zm41.66,17.28h9l-8.9-21.48a15.77,15.77,0,0,0,7-13.52c0-9.83-7.67-15.62-18.52-15.62H79.77v50.62h8.17V427.78l.94-.29c1-.29,2-.65,2.89-1l7,17.71Zm-.94-35c0,4.7-3.18,7.81-8.68,9.76l-1.23.44v-18c6.58.29,9.91,3.33,9.91,7.81Zm12.44,35h7.95V412.74l13.16,31.45h8V393.57h-8V425l-13.17-31.46h-8v50.62Zm34.64,0H169v-7.81H153.1V422.06H165v-8H153.1V401.38h14.32l1.59-7.81H144.93v50.62Zm46.79,0h9l-8.9-21.48a15.77,15.77,0,0,0,7-13.52c0-9.83-7.67-15.62-18.52-15.62H172.7v50.62h8.17V427.78l.94-.29c1-.29,1.95-.65,2.89-1l7,17.71Zm-.94-35c0,4.7-3.18,7.81-8.68,9.76l-1.23.44v-18c6.58.29,9.91,3.33,9.91,7.81Zm52.57,18.37a11.49,11.49,0,0,0-8-11.43A12.36,12.36,0,0,0,240,407c0-8.17-7-13.38-17.94-13.38h-6.94v50.62h7.09c12.8,0,21.11-7,21.11-16.63Zm-11.28-20c0,3.54-2.67,6.44-7.52,7.45l-1.3.29v-14c5.5.14,8.82,2.53,8.82,6.29Zm-6.36,14.68c5.28-1.3,9.54.8,9.54,5.35,0,5.21-5,8.9-12,8.9V422.86l2.46-.58Zm40.64,21.91h9l-8.89-21.48a15.79,15.79,0,0,0,7-13.52c0-9.83-7.66-15.62-18.51-15.62h-7.67v50.62h8.17V427.78l.94-.29c1-.29,2-.65,2.9-1l7,17.71Zm-.94-35c0,4.7-3.18,7.81-8.68,9.76l-1.23.44v-18c6.58.29,9.91,3.33,9.91,7.81Zm27,35.65c9.91,0,15.91-8.53,15.91-26s-6.08-26-15.91-26-15.91,8.6-15.91,26,6,26,15.91,26Zm0-7.88c-4.7,0-7.67-5.93-7.67-18.08s3-18.15,7.67-18.15,7.66,6,7.66,18.15-3,18.08-7.66,18.08Zm17.5-4.12c2.53,8.1,7.59,11.86,14.46,11.86a13.72,13.72,0,0,0,13.67-14c0-5.57-2.46-9.83-7.66-13.67L325,413c-3.25-2.38-4.84-4.84-4.84-7.59a4.21,4.21,0,0,1,4.19-4.48c3.4,0,5.21,2.67,6.37,6.87l7-4.2c-2.38-7.45-6.87-10.56-13-10.56A12.6,12.6,0,0,0,312.06,406c0,4.48,1.73,9,6.87,12.87l6,4.49c3,2.31,5.06,4.84,5.06,8a5.31,5.31,0,0,1-5.35,5.43c-4.12,0-6.43-3-7.88-8.1l-6.8,4.12ZM344,444.63a4.85,4.85,0,1,0-4.84-4.85,4.89,4.89,0,0,0,4.84,4.85Z" style="fill: #fff"/>
+      <path d="M100.72,13.49a2,2,0,0,0-1.49,1.87L95.86,30,68.19,37.43c-.75.19-.94.75-1.13,1.49L63.32,54.26,36.4,61.36c-.75.19-1.12.75-1.5,2.25a192.73,192.73,0,0,0-3.36,36.27c0,107.71,56.09,201.2,139.86,256.92a7.39,7.39,0,0,0,3,1.5,7.41,7.41,0,0,0,3-1.5c83.76-55.72,139.86-149.21,139.86-256.92a191.9,191.9,0,0,0-3.37-36.27c-.37-1.5-.74-2.06-1.49-2.25l-26.93-7.1-3.74-15.34c-.18-.74-.37-1.3-1.12-1.49L252.93,30l-3.37-14.59a2.05,2.05,0,0,0-1.49-1.87L176.17.16a10.14,10.14,0,0,0-3.56,0Z" style="fill: #004db4"/>
+      <path d="M186.36,307.63c70.29-65,91.6-113.28,91.6-142.45,0-16.45-6.35-28.79-22.81-33.27a50.79,50.79,0,0,0,13.09-34c0-30.28-32.15-51.22-82.25-54.58a1,1,0,0,0-1.13,1.12V307.26c0,.75.75,1.12,1.5.37Zm-22.43-.37V44.42a1,1,0,0,0-1.13-1.12,147.9,147.9,0,0,0-18.69,3.36c-1.5.37-1.87,1.12-1.87,2.62L143,183.5c0,16.83,0,30.66.75,46.37,0,1.12-1.13,1.49-1.5.37-13.83-43-20.19-96.84-19.07-174.61,0-1.49-.37-1.87-2.24-1.12a130.84,130.84,0,0,0-18,9.35c-1.12.75-1.49,1.49-1.49,3.36-1.12,53.47,3.36,99.83,11.21,134.6l-4.11,2.62c-1.5,1.12-2.62,1.12-3.74-1.12C91.77,174.16,83.54,129.66,83.54,81.81c0-1.87-1.12-2.62-2.24-1.5a179.43,179.43,0,0,0-16.45,17.2A6.68,6.68,0,0,0,63,102.37c1.12,38.88,13.46,94.22,32.52,127.87,2.25,4.11,5.24,5.23,9,2.62l14.21-9c9.34,31.41,23.18,60.2,43.74,83.75.75.75,1.5.38,1.5-.37ZM206.18,68c22.8,1.5,40,13.84,40,28.79,0,15.7-11.22,32.53-40,49.35V68Zm37,84.87c7.1,0,12,6,12,16.46,0,14.95-10.84,44.11-49,86.74v-84.5c22-15.7,29.16-18.7,37-18.7Z" style="fill: #fff"/>
+      <g>
+        <path d="M123.19,487.71a12.47,12.47,0,0,1-4.75-.88,11.17,11.17,0,0,1-3.78-2.45,10.89,10.89,0,0,1-2.49-3.88,14,14,0,0,1-.89-5.12,13.71,13.71,0,0,1,.92-5.11,11.49,11.49,0,0,1,2.53-3.9,11.11,11.11,0,0,1,3.79-2.47,12.67,12.67,0,0,1,4.7-.88,14,14,0,0,1,5.86,1.21,9.06,9.06,0,0,1,4.17,3.77l-4.91,4.05a6.35,6.35,0,0,0-2.16-2.44,5.4,5.4,0,0,0-3-.85,4.82,4.82,0,0,0-2,.43,4.9,4.9,0,0,0-1.7,1.25,6.09,6.09,0,0,0-1.17,2.09,9.3,9.3,0,0,0-.43,2.92,8.48,8.48,0,0,0,.45,2.87,6.34,6.34,0,0,0,1.2,2.09,4.82,4.82,0,0,0,1.77,1.27,5.27,5.27,0,0,0,2.11.43,4.92,4.92,0,0,0,3-.87,4.48,4.48,0,0,0,1.61-2.49h-5.39v-4.67h12v1.27a14.73,14.73,0,0,1-.89,5.34,11.18,11.18,0,0,1-2.42,3.88,9.94,9.94,0,0,1-3.65,2.35A13.22,13.22,0,0,1,123.19,487.71Z" style="fill: #fff"/>
+        <path d="M143.27,463.37h8.93l7.86,24h-6.87l-1.4-4.57h-8.31l-1.37,4.57h-6.8Zm1.65,14.52h5.39L147.6,469Z" style="fill: #fff"/>
+        <path d="M177.81,487.4h-3.3l-5.7-16.79V487.4H163v-24h9.2l4,12.32,4.09-12.32h9.17v24h-6V470.54Z" style="fill: #fff"/>
+        <path d="M194.66,487.4v-24H213l-1.2,5.39H201.05V473h10.09v4.87H201.05v4.26h12v5.29Z" style="fill: #fff"/>
+        <path d="M216.39,470.61a6.74,6.74,0,0,1,2.51-5.51,10.23,10.23,0,0,1,6.66-2,15.24,15.24,0,0,1,5.87,1.08,10.71,10.71,0,0,1,4.36,3.28l-4.15,4.29a8.66,8.66,0,0,0-2.54-2.42,6.7,6.7,0,0,0-3.71-1,3.12,3.12,0,0,0-1.84.48,1.47,1.47,0,0,0-.67,1.23,1.51,1.51,0,0,0,.6,1.17,6.47,6.47,0,0,0,2.22,1l3.43,1a12.09,12.09,0,0,1,5.49,2.93,5.71,5.71,0,0,1,1.55,3.9,7.33,7.33,0,0,1-.62,3,6.78,6.78,0,0,1-1.85,2.46,9.2,9.2,0,0,1-3.13,1.66,13.89,13.89,0,0,1-4.39.62,15.53,15.53,0,0,1-6.28-1.18,10.68,10.68,0,0,1-4.33-3.32l4.09-4.18a9.67,9.67,0,0,0,2.72,2.57,7.26,7.26,0,0,0,4,1,3.69,3.69,0,0,0,2.33-.58,1.62,1.62,0,0,0,.72-1.24,1.49,1.49,0,0,0-.58-1.2,5.36,5.36,0,0,0-1.75-.86l-4.32-1.37a10.07,10.07,0,0,1-4.88-2.85A6.09,6.09,0,0,1,216.39,470.61Z" style="fill: #fff"/>
+      </g>
+      <path d="M216.14,356.24,214,350.8h-1.67v7.46h1.16v-5.82l2.34,5.82h.67l2.35-5.82v5.82H220V350.8h-1.64ZM204.61,352h2.72v6.31h1.27V352h2.74V350.8h-6.73Z" style="fill: #fff"/>
+    </g>
+  </g>
+</svg>
+    </a>
+    <a href="http://warnerbrosgames.org" class="logo d-xl-none" aria-label="Visit home page of this site">
+
+        <img src="https://cdn.wbgames.com/static/wb-games-logo-h.svg" alt="WB Games">
+
+    </a>
+    <nav>
+
+        <div class="utility">
+            <search
+                    placeholder-msg="Search Games"
+                    searching-msg="Searching..."
+                    no-results-msg="Sorry, but no results were found."
+                    asset-path="https://s3.us-east-2.amazonaws.com/wb-hub-prod/"></search>
+        </div>
+
+        <div class="nav-wrapper" role="navigation">
+
+        <a href="http://warnerbrosgames.org" 
+           class=" d-none d-xl-flex active"
+           aria-label="Visit home page of this site"
+        >Home</a>
+        <a href="http://warnerbrosgames.org/games" 
+           class=" d-none d-xl-flex "
+           aria-label="Visit games page"
+        >Games</a>
+        <a href="http://warnerbrosgames.org/news" 
+           class=" d-none d-xl-flex "
+           aria-label="Visit news page"
+        >News</a>
+        <a href="http://warnerbrosgames.org/careers" 
+           class=" d-none d-xl-flex "
+           aria-label="Visit careers page"
+        >Careers</a>
+
+        <a href="https://support.wbgames.com/"
+           class=" d-none d-xl-flex "
+           aria-label="Visit support page"
+           target="_blank" 
+           rel="noopener"
+        >Support</a>
+
+        <a href="http://playtest.wbgames.com"
+           class=" d-none d-xl-flex playtest"
+           aria-label="Playtest"
+           target="_blank"
+        >Playtest 
+
+        </a>
+
+        <div class="search-register">
+
+            <a href="#" class="btn btn-outline-blue  d-none d-xl-flex"
+               aria-label="Show email signup form."
+               @click.prevent="launchEmailSignup">
+                Stay Connected
+            </a>                    
+            <button type="button" class="navbar-toggle visible-xs-flex visible-sm-flex visible-md-flex d-flex d-xl-none" @click="$store.commit('showMobileMenu',true)" aria-label="Open mobile menu">
+
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+
+        </div>
+
+        <div class="pn-banner pn-banner-desktop d-none d-xl-flex"></div>
+
+    </div>
+
+    </nav>
+</header>
+            <div role="main">
+
+
+    <h1 class="sr-only">Home</h1>
+
+    <section id="Hero">
+
+    <div id="HeroSliderWrapper">
+
+
+
+    <hero-slider>
+
+        <template slot="slides">
+
+
+                <div id="NavigationSlide0"
+                     aria-label="0 of 5"
+                     data-href="https://www.hogwartslegacy.com/" class="slide " id="hogwarts-legacy">
+
+                <a href="https://www.hogwartslegacy.com/" target="_blank" rel="noopener" aria-label="Visit Hogwarts Legacy">
+    <video autoplay muted loop playsinline  v-if="!$store.state.isMobile && !ie_edge" >
+        <source src="https://cdn.wbgames.com/media/533/hero_video_1645575166.mp4" type="video/mp4">
+    </video>
+    </a>
+
+
+    <div data-href="https://www.hogwartslegacy.com/" v-if="$store.state.isMobile || ie_edge">
+
+
+            <a href="https://www.hogwartslegacy.com/" target="_blank" rel="noopener" aria-label="Visit Hogwarts Legacy">
+        <picture>
+            <source srcset="https://cdn.wbgames.com/media/530/conversions/hero_1645575102-desktop.jpg" media="(min-width: 768px)">
+
+            <source srcset="https://cdn.wbgames.com/media/531/conversions/hero_mobile_1645575123-mobile.jpg" media="(min-width: 10px)">
+
+            <img src="https://cdn.wbgames.com/media/530/conversions/hero_1645575102-desktop.jpg" alt=""/>
+        </picture>
+            </a>
+    </div>
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="meta right">
+
+    <img src="https://cdn.wbgames.com/media/532/conversions/logo_1645575134-sized.png" alt="" class="img-fluid"/>
+
+    <h3></h3>
+
+    <ul>
+
+            <li>
+                <a href="https://www.hogwartslegacy.com/"
+                   aria-label="Visit Full Site link"
+                   class="btn btn-block btn-white"
+                   target="_blank" rel="noopener">
+
+
+                        Visit Full Site
+
+
+
+
+                </a>
+
+            </li>
+
+
+            </ul>
+
+</div>        </div>
+    </div>
+</div>
+
+                </div>
+
+
+                <div id="NavigationSlide1"
+                     aria-label="1 of 5"
+                     data-href="https://www.multiversus.com/" class="slide " id="golf-clash">
+
+                <a href="https://www.multiversus.com/" target="_blank" rel="noopener" aria-label="Visit MultiVersus">
+    <video autoplay muted loop playsinline  v-if="!$store.state.isMobile && !ie_edge" >
+        <source src="https://cdn.wbgames.com/media/483/hero_video_1642730671.mp4" type="video/mp4">
+    </video>
+    </a>
+
+
+    <div data-href="https://www.multiversus.com/" v-if="$store.state.isMobile || ie_edge">
+
+
+            <a href="https://www.multiversus.com/" target="_blank" rel="noopener" aria-label="Visit MultiVersus">
+        <picture>
+            <source srcset="https://cdn.wbgames.com/media/487/conversions/hero_1642732440-desktop.jpg" media="(min-width: 768px)">
+
+            <source srcset="https://cdn.wbgames.com/media/488/conversions/hero_mobile_1642732595-mobile.jpg" media="(min-width: 10px)">
+
+            <img src="https://cdn.wbgames.com/media/487/conversions/hero_1642732440-desktop.jpg" alt=""/>
+        </picture>
+            </a>
+    </div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="meta right">
+
+    <img src="https://cdn.wbgames.com/media/482/conversions/logo_1642730344-sized.png" alt="" class="img-fluid"/>
+
+    <h3>MultiVersus is an all-new free-to-play, platform fighter videogame.</h3>
+
+    <ul>
+
+            <li>
+                <a href="https://www.multiversus.com/"
+                   aria-label="Visit Full Site link"
+                   class="btn btn-block btn-white"
+                   target="_blank" rel="noopener">
+
+
+                        Visit Full Site
+
+
+
+
+                </a>
+
+            </li>
+
+
+            </ul>
+
+</div>        </div>
+    </div>
+</div>
+
+
+                </div>
+
+
+                <div id="NavigationSlide2"
+                     aria-label="2 of 5"
+                     data-href="https://lswtss-ttg15.warnerbrosgames.org" class="slide " id="LEGO-star-wars-the-skywalker-saga">
+
+                <a href="https://lswtss-ttg15.warnerbrosgames.org" target="_blank" rel="noopener" aria-label="Visit LEGO® Star Wars™: The Skywalker Saga">
+    <video autoplay muted loop playsinline  v-if="!$store.state.isMobile && !ie_edge" >
+        <source src="https://cdn.wbgames.com/media/501/hero_video_1643410975.mp4" type="video/mp4">
+    </video>
+    </a>
+
+
+    <div data-href="https://lswtss-ttg15.warnerbrosgames.org" v-if="$store.state.isMobile || ie_edge">
+
+
+            <a href="https://lswtss-ttg15.warnerbrosgames.org" target="_blank" rel="noopener" aria-label="Visit LEGO® Star Wars™: The Skywalker Saga">
+        <picture>
+            <source srcset="https://cdn.wbgames.com/media/498/conversions/hero_1643410829-desktop.jpg" media="(min-width: 768px)">
+
+            <source srcset="https://cdn.wbgames.com/media/499/conversions/hero_mobile_1643410948-mobile.jpg" media="(min-width: 10px)">
+
+            <img src="https://cdn.wbgames.com/media/498/conversions/hero_1643410829-desktop.jpg" alt=""/>
+        </picture>
+            </a>
+    </div>
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="meta right">
+
+    <img src="https://cdn.wbgames.com/media/500/conversions/logo_1643410957-sized.png" alt="" class="img-fluid"/>
+
+    <h3></h3>
+
+    <ul>
+
+            <li>
+                <a href="https://lswtss-ttg15.warnerbrosgames.org"
+                   aria-label="Visit Full Site link"
+                   class="btn btn-block btn-white"
+                   target="_self" rel="noopener">
+
+
+                        Visit Full Site
+
+
+
+
+                </a>
+
+            </li>
+
+
+            </ul>
+
+</div>        </div>
+    </div>
+</div>
+
+                </div>
+
+
+                <div id="NavigationSlide3"
+                     aria-label="3 of 5"
+                     data-href="https://hpma.sng.link/Djzmt/flxj" class="slide " id="harry-potter-magic-awakened">
+
+                <a href="https://hpma.sng.link/Djzmt/flxj" target="_blank" rel="noopener" aria-label="Visit Harry Potter: Magic Awakened">
+    <video autoplay muted loop playsinline  v-if="!$store.state.isMobile && !ie_edge" >
+        <source src="https://cdn.wbgames.com/media/524/hero_video_1644513437.mp4" type="video/mp4">
+    </video>
+    </a>
+
+
+    <div data-href="https://hpma.sng.link/Djzmt/flxj" v-if="$store.state.isMobile || ie_edge">
+
+
+            <div class="mobile-notice">
+                Mobile
+            </div>
+
+
+
+            <a href="https://hpma.sng.link/Djzmt/flxj" target="_blank" rel="noopener" aria-label="Visit Harry Potter: Magic Awakened">
+        <picture>
+            <source srcset="https://cdn.wbgames.com/media/517/conversions/hero_1644493433-desktop.jpg" media="(min-width: 768px)">
+
+            <source srcset="https://cdn.wbgames.com/media/518/conversions/hero_mobile_1644493443-mobile.jpg" media="(min-width: 10px)">
+
+            <img src="https://cdn.wbgames.com/media/517/conversions/hero_1644493433-desktop.jpg" alt=""/>
+        </picture>
+            </a>
+    </div>
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="meta right">
+
+    <img src="https://cdn.wbgames.com/media/511/conversions/logo_1644491373-sized.png" alt="" class="img-fluid"/>
+
+    <h3>Harry Potter: Magic Awakened is an all-new immersive collectible card game (CCG) with MMO and RPG elements from WBGames and NetEase arriving on iOS & Android platforms later in 2022.</h3>
+
+    <ul>
+
+            <li>
+                <a href="https://hpma.sng.link/Djzmt/flxj"
+                   aria-label="Sign Up Now link"
+                   class="btn btn-block btn-white"
+                   target="_self" rel="noopener">
+
+
+                        Sign Up Now
+
+
+
+
+                </a>
+
+            </li>
+
+
+            </ul>
+
+</div>        </div>
+    </div>
+</div>
+
+                </div>
+
+
+                <div id="NavigationSlide4"
+                     aria-label="4 of 5"
+                     data-href="https://back4blood.com" class="slide " id="harry-potter-wizards-unite">
+
+                <a href="https://back4blood.com" target="_blank" rel="noopener" aria-label="Visit Back 4 Blood">
+    <video autoplay muted loop playsinline  v-if="!$store.state.isMobile && !ie_edge" >
+        <source src="https://cdn.wbgames.com/media/505/hero_video_1644453448.mp4" type="video/mp4">
+    </video>
+    </a>
+
+
+    <div data-href="https://back4blood.com" v-if="$store.state.isMobile || ie_edge">
+
+
+            <a href="https://back4blood.com" target="_blank" rel="noopener" aria-label="Visit Back 4 Blood">
+        <picture>
+            <source srcset="https://cdn.wbgames.com/media/473/conversions/hero_1637268989-desktop.jpg" media="(min-width: 768px)">
+
+            <source srcset="https://cdn.wbgames.com/media/472/conversions/hero_mobile_1637268983-mobile.jpg" media="(min-width: 10px)">
+
+            <img src="https://cdn.wbgames.com/media/473/conversions/hero_1637268989-desktop.jpg" alt=""/>
+        </picture>
+            </a>
+    </div>
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="meta right">
+
+    <img src="https://cdn.wbgames.com/media/471/conversions/logo_1637268980-sized.png" alt="" class="img-fluid"/>
+
+    <h3>Come Slay With Us</h3>
+
+    <ul>
+
+            <li>
+                <a href="https://back4blood.com"
+                   aria-label="Visit Full Site link"
+                   class="btn btn-block btn-white"
+                   target="_self" rel="noopener">
+
+
+                        Visit Full Site
+
+
+
+
+                </a>
+
+            </li>
+
+
+            </ul>
+
+</div>        </div>
+    </div>
+</div>
+
+                </div>
+
+
+        </template>
+
+        <template slot="dots">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="slide-selector" role="tablist">
+
+
+                                <a href="#"q
+                                   role="tab"
+                                   aria-label="0 of 5"
+                                   aria-controls="NavigationSlide0"
+                                   aria-selected="true"
+                                   class="dot active">
+
+                                    <div class="bar"></div>
+
+                                </a>
+
+
+                                <a href="#"q
+                                   role="tab"
+                                   aria-label="1 of 5"
+                                   aria-controls="NavigationSlide1"
+                                   aria-selected="false"
+                                   class="dot ">
+
+                                    <div class="bar"></div>
+
+                                </a>
+
+
+                                <a href="#"q
+                                   role="tab"
+                                   aria-label="2 of 5"
+                                   aria-controls="NavigationSlide2"
+                                   aria-selected="false"
+                                   class="dot ">
+
+                                    <div class="bar"></div>
+
+                                </a>
+
+
+                                <a href="#"q
+                                   role="tab"
+                                   aria-label="3 of 5"
+                                   aria-controls="NavigationSlide3"
+                                   aria-selected="false"
+                                   class="dot ">
+
+                                    <div class="bar"></div>
+
+                                </a>
+
+
+                                <a href="#"q
+                                   role="tab"
+                                   aria-label="4 of 5"
+                                   aria-controls="NavigationSlide4"
+                                   aria-selected="false"
+                                   class="dot ">
+
+                                    <div class="bar"></div>
+
+                                </a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </template>
+    </hero-slider>
+    </div>
+
+    <div class="featured container d-none d-lg-block">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="wrap">
+
+                        <div class="game " ref="thumb_40" v-tapopen>
+
+    <div class="mc">
+
+                                    <div class="img-wrapper">
+
+            <img src="https://cdn.wbgames.com/media/525/conversions/thumb_1645571319-sized.jpg" alt="Hogwarts Legacy thumbnail" class="img-fluid">
+            <img src="https://cdn.wbgames.com/media/526/conversions/thumb_hover_1645571329-sized.jpg" alt="Hogwarts Legacy thumbnail 2" class="img-fluid dup">
+
+        </div>
+
+        <div class="meta">
+            <h3>
+                Hogwarts Legacy
+            </h3>
+            <div class="platforms">
+
+                                    <span data-toggle="tooltip" data-placement="bottom" title="Available on Windows">
+                    <font-awesome-icon :icon="['fab', 'windows']" fixed-width ></font-awesome-icon></span>
+                                    <span data-toggle="tooltip" data-placement="bottom" title="Available on PlayStation">
+                    <font-awesome-icon :icon="['fab', 'playstation']" fixed-width ></font-awesome-icon></span>
+                                    <span data-toggle="tooltip" data-placement="bottom" title="Available on Xbox">
+                    <font-awesome-icon :icon="['fab', 'xbox']" fixed-width ></font-awesome-icon></span>
+
+            </div>
+
+
+            <font-awesome-icon :icon="['fal', 'angle-down']" class="arrow"></font-awesome-icon>
+
+
+        </div>
+
+        <div class="bottom-border"></div>
+
+    </div>
+
+    <ul class="links">
+
+
+
+                <li>
+
+                    <a href="https://www.hogwartslegacy.com/"
+                       class="btn btn-block btn-white"
+                       title="Visit Full Site"
+                       aria-label="Visit Hogwarts Legacy"
+                       target="blank"
+                       rel="noopener"
+                    >
+
+
+                            Visit Full Site
+
+
+                    </a>
+
+                </li>
+
+
+
+
+
+    </ul>
+
+</div>
+
+
+                        <div class="game " ref="thumb_41" v-tapopen>
+
+    <div class="mc">
+
+                                    <div class="img-wrapper">
+
+            <img src="https://cdn.wbgames.com/media/534/conversions/thumb_1666292110-sized.jpg" alt="Gotham Knights thumbnail" class="img-fluid">
+            <img src="https://cdn.wbgames.com/media/535/conversions/thumb_hover_1666292112-sized.jpg" alt="Gotham Knights thumbnail 2" class="img-fluid dup">
+
+        </div>
+
+        <div class="meta">
+            <h3>
+                Gotham Knights
+            </h3>
+            <div class="platforms">
+
+                                    <span data-toggle="tooltip" data-placement="bottom" title="Available on Xbox">
+                    <font-awesome-icon :icon="['fab', 'xbox']" fixed-width ></font-awesome-icon></span>
+                                    <span data-toggle="tooltip" data-placement="bottom" title="Available on Windows">
+                    <font-awesome-icon :icon="['fab', 'windows']" fixed-width ></font-awesome-icon></span>
+                                    <span data-toggle="tooltip" data-placement="bottom" title="Available on PlayStation">
+                    <font-awesome-icon :icon="['fab', 'playstation']" fixed-width ></font-awesome-icon></span>
+
+            </div>
+
+
+            <font-awesome-icon :icon="['fal', 'angle-down']" class="arrow"></font-awesome-icon>
+
+
+        </div>
+
+        <div class="bottom-border"></div>
+
+    </div>
+
+    <ul class="links">
+
+
+
+                <li>
+
+                    <a href="https://www.gothamknightsgame.com/"
+                       class="btn btn-block btn-white"
+                       title="Visit Full Site"
+                       aria-label="Visit Gotham Knights"
+                       target="_blank"
+                       rel="noopener"
+                    >
+
+
+                            Visit Full Site
+
+
+                    </a>
+
+                </li>
+
+
+
+
+
+    </ul>
+
+</div>
+
+
+                        <div class="game " ref="thumb_28" v-tapopen>
+
+    <div class="mc">
+
+                                    <div class="img-wrapper">
+
+            <img src="https://cdn.wbgames.com/media/481/conversions/thumb_1642729421-sized.jpg" alt="MultiVersus thumbnail" class="img-fluid">
+            <img src="https://cdn.wbgames.com/media/480/conversions/thumb_hover_1642729133-sized.jpg" alt="MultiVersus thumbnail 2" class="img-fluid dup">
+
+        </div>
+
+        <div class="meta">
+            <h3>
+                MultiVersus
+            </h3>
+            <div class="platforms">
+
+                                    <span data-toggle="tooltip" data-placement="bottom" title="Available on PlayStation">
+                    <font-awesome-icon :icon="['fab', 'playstation']" fixed-width ></font-awesome-icon></span>
+                                    <span data-toggle="tooltip" data-placement="bottom" title="Available on Xbox">
+                    <font-awesome-icon :icon="['fab', 'xbox']" fixed-width ></font-awesome-icon></span>
+                                    <span data-toggle="tooltip" data-placement="bottom" title="Available on Windows">
+                    <font-awesome-icon :icon="['fab', 'windows']" fixed-width ></font-awesome-icon></span>
+
+            </div>
+
+
+            <font-awesome-icon :icon="['fal', 'angle-down']" class="arrow"></font-awesome-icon>
+
+
+        </div>
+
+        <div class="bottom-border"></div>
+
+    </div>
+
+    <ul class="links">
+
+
+
+                <li>
+
+                    <a href="https://www.multiversus.com/"
+                       class="btn btn-block btn-white"
+                       title="Visit Full Site"
+                       aria-label="Visit MultiVersus"
+                       target="_blank"
+                       rel="noopener"
+                    >
+
+
+                            Visit Full Site
+
+
+                    </a>
+
+                </li>
+
+
+
+
+
+    </ul>
+
+</div>
+
+
+                        <div class="game " ref="thumb_14" v-tapopen>
+
+    <div class="mc">
+
+                                    <div class="img-wrapper">
+
+            <img src="https://cdn.wbgames.com/media/493/conversions/thumb_1643410131-sized.jpg" alt="LEGO® Star Wars™: The Skywalker Saga thumbnail" class="img-fluid">
+            <img src="https://cdn.wbgames.com/media/494/conversions/thumb_hover_1643410141-sized.jpg" alt="LEGO® Star Wars™: The Skywalker Saga thumbnail 2" class="img-fluid dup">
+
+        </div>
+
+        <div class="meta">
+            <h3>
+                LEGO® Star Wars™: The Skywalker Saga
+            </h3>
+            <div class="platforms">
+
+                                    <span data-toggle="tooltip" data-placement="bottom" title="Available on Nintendo Switch">
+                    <font-awesome-icon :icon="['fab', 'nintendo-switch']" fixed-width ></font-awesome-icon></span>
+                                    <span data-toggle="tooltip" data-placement="bottom" title="Available on Windows">
+                    <font-awesome-icon :icon="['fab', 'windows']" fixed-width ></font-awesome-icon></span>
+                                    <span data-toggle="tooltip" data-placement="bottom" title="Available on PlayStation">
+                    <font-awesome-icon :icon="['fab', 'playstation']" fixed-width ></font-awesome-icon></span>
+                                    <span data-toggle="tooltip" data-placement="bottom" title="Available on Xbox">
+                    <font-awesome-icon :icon="['fab', 'xbox']" fixed-width ></font-awesome-icon></span>
+
+            </div>
+
+
+            <font-awesome-icon :icon="['fal', 'angle-down']" class="arrow"></font-awesome-icon>
+
+
+        </div>
+
+        <div class="bottom-border"></div>
+
+    </div>
+
+    <ul class="links">
+
+
+
+                <li>
+
+                    <a href="https://lswtss-ttg15.warnerbrosgames.org"
+                       class="btn btn-block btn-white"
+                       title="Visit Full Site"
+                       aria-label="Visit LEGO® Star Wars™: The Skywalker Saga"
+                       target="_blank"
+                       rel="noopener"
+                    >
+
+
+                            Visit Full Site
+
+
+                    </a>
+
+                </li>
+
+
+
+
+
+    </ul>
+
+</div>
+
+
+                        <div class="game mobile" ref="thumb_39" v-tapopen>
+
+    <div class="mc">
+
+
+                <div class="mobile-notice">
+                    Mobile
+                </div>
+
+
+                                    <div class="img-wrapper">
+
+            <img src="https://cdn.wbgames.com/media/502/conversions/thumb_1644443888-sized.jpg" alt="Harry Potter: Magic Awakened thumbnail" class="img-fluid">
+            <img src="https://cdn.wbgames.com/media/503/conversions/thumb_hover_1644443896-sized.jpg" alt="Harry Potter: Magic Awakened thumbnail 2" class="img-fluid dup">
+
+        </div>
+
+        <div class="meta">
+            <h3>
+                Harry Potter: Magic Awakened
+            </h3>
+            <div class="platforms">
+
+                                    <span data-toggle="tooltip" data-placement="bottom" title="Available at Google Play">
+                    <font-awesome-icon :icon="['fab', 'google-play']" fixed-width ></font-awesome-icon></span>
+                                    <span data-toggle="tooltip" data-placement="bottom" title="Available at the Apple App Store">
+                    <font-awesome-icon :icon="['fab', 'apple']" fixed-width ></font-awesome-icon></span>
+
+            </div>
+
+
+            <font-awesome-icon :icon="['fal', 'angle-down']" class="arrow"></font-awesome-icon>
+
+
+        </div>
+
+        <div class="bottom-border"></div>
+
+    </div>
+
+    <ul class="links">
+
+
+
+                <li>
+
+                    <a href="https://hpma.sng.link/Djzmt/flxj"
+                       class="btn btn-block btn-white"
+                       title="Sign Up Now"
+                       aria-label="Visit Harry Potter: Magic Awakened"
+                       target="_blank"
+                       rel="noopener"
+                    >
+
+
+                            Sign Up Now
+
+
+                    </a>
+
+                </li>
+
+
+
+
+
+    </ul>
+
+</div>
+
+                                    </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+    <div class="content">
+
+        <find-games :data="{&quot;games&quot;:[{&quot;id&quot;:40,&quot;title&quot;:&quot;Hogwarts Legacy&quot;,&quot;slug&quot;:&quot;hogwarts-legacy&quot;,&quot;isDLC&quot;:false,&quot;isMobile&quot;:false,&quot;thumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/525\/conversions\/thumb_1645571319-sized.jpg&quot;,&quot;hoverThumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/526\/conversions\/thumb_hover_1645571329-sized.jpg&quot;,&quot;platforms&quot;:[{&quot;id&quot;:4,&quot;title&quot;:&quot;PC&quot;,&quot;slug&quot;:&quot;pc&quot;,&quot;icon&quot;:&quot;windows&quot;},{&quot;id&quot;:2,&quot;title&quot;:&quot;PlayStation&quot;,&quot;slug&quot;:&quot;playstation-4&quot;,&quot;icon&quot;:&quot;playstation&quot;},{&quot;id&quot;:1,&quot;title&quot;:&quot;XBOX&quot;,&quot;slug&quot;:&quot;xbox-one&quot;,&quot;icon&quot;:&quot;xbox&quot;}],&quot;has_detail&quot;:0,&quot;glinks&quot;:[{&quot;id&quot;:111,&quot;title&quot;:&quot;Visit Full Site&quot;,&quot;link&quot;:&quot;https:\/\/www.hogwartslegacy.com\/&quot;,&quot;css_class&quot;:&quot;white&quot;,&quot;target&quot;:&quot;blank&quot;,&quot;image&quot;:null}]},{&quot;id&quot;:41,&quot;title&quot;:&quot;Gotham Knights&quot;,&quot;slug&quot;:&quot;gotham-knights&quot;,&quot;isDLC&quot;:false,&quot;isMobile&quot;:false,&quot;thumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/534\/conversions\/thumb_1666292110-sized.jpg&quot;,&quot;hoverThumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/535\/conversions\/thumb_hover_1666292112-sized.jpg&quot;,&quot;platforms&quot;:[{&quot;id&quot;:4,&quot;title&quot;:&quot;PC&quot;,&quot;slug&quot;:&quot;pc&quot;,&quot;icon&quot;:&quot;windows&quot;},{&quot;id&quot;:2,&quot;title&quot;:&quot;PlayStation&quot;,&quot;slug&quot;:&quot;playstation-4&quot;,&quot;icon&quot;:&quot;playstation&quot;},{&quot;id&quot;:1,&quot;title&quot;:&quot;XBOX&quot;,&quot;slug&quot;:&quot;xbox-one&quot;,&quot;icon&quot;:&quot;xbox&quot;}],&quot;has_detail&quot;:0,&quot;glinks&quot;:[{&quot;id&quot;:112,&quot;title&quot;:&quot;Visit Full Site&quot;,&quot;link&quot;:&quot;https:\/\/www.gothamknightsgame.com\/&quot;,&quot;css_class&quot;:&quot;white&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:null}]},{&quot;id&quot;:28,&quot;title&quot;:&quot;MultiVersus&quot;,&quot;slug&quot;:&quot;golf-clash&quot;,&quot;isDLC&quot;:false,&quot;isMobile&quot;:false,&quot;thumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/481\/conversions\/thumb_1642729421-sized.jpg&quot;,&quot;hoverThumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/480\/conversions\/thumb_hover_1642729133-sized.jpg&quot;,&quot;platforms&quot;:[{&quot;id&quot;:4,&quot;title&quot;:&quot;PC&quot;,&quot;slug&quot;:&quot;pc&quot;,&quot;icon&quot;:&quot;windows&quot;},{&quot;id&quot;:2,&quot;title&quot;:&quot;PlayStation&quot;,&quot;slug&quot;:&quot;playstation-4&quot;,&quot;icon&quot;:&quot;playstation&quot;},{&quot;id&quot;:1,&quot;title&quot;:&quot;XBOX&quot;,&quot;slug&quot;:&quot;xbox-one&quot;,&quot;icon&quot;:&quot;xbox&quot;}],&quot;has_detail&quot;:0,&quot;glinks&quot;:[{&quot;id&quot;:105,&quot;title&quot;:&quot;Visit Full Site&quot;,&quot;link&quot;:&quot;https:\/\/www.multiversus.com\/&quot;,&quot;css_class&quot;:&quot;white&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:null}]},{&quot;id&quot;:14,&quot;title&quot;:&quot;LEGO\u00ae Star Wars\u2122: The Skywalker Saga&quot;,&quot;slug&quot;:&quot;LEGO-star-wars-the-skywalker-saga&quot;,&quot;isDLC&quot;:false,&quot;isMobile&quot;:false,&quot;thumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/493\/conversions\/thumb_1643410131-sized.jpg&quot;,&quot;hoverThumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/494\/conversions\/thumb_hover_1643410141-sized.jpg&quot;,&quot;platforms&quot;:[{&quot;id&quot;:3,&quot;title&quot;:&quot;Switch&quot;,&quot;slug&quot;:&quot;switch&quot;,&quot;icon&quot;:&quot;nintendo-switch&quot;},{&quot;id&quot;:4,&quot;title&quot;:&quot;PC&quot;,&quot;slug&quot;:&quot;pc&quot;,&quot;icon&quot;:&quot;windows&quot;},{&quot;id&quot;:2,&quot;title&quot;:&quot;PlayStation&quot;,&quot;slug&quot;:&quot;playstation-4&quot;,&quot;icon&quot;:&quot;playstation&quot;},{&quot;id&quot;:1,&quot;title&quot;:&quot;XBOX&quot;,&quot;slug&quot;:&quot;xbox-one&quot;,&quot;icon&quot;:&quot;xbox&quot;}],&quot;has_detail&quot;:0,&quot;glinks&quot;:[{&quot;id&quot;:109,&quot;title&quot;:&quot;Visit Full Site&quot;,&quot;link&quot;:&quot;https:\/\/lswtss-ttg15.warnerbrosgames.org&quot;,&quot;css_class&quot;:&quot;white&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:null}]},{&quot;id&quot;:39,&quot;title&quot;:&quot;Harry Potter: Magic Awakened&quot;,&quot;slug&quot;:&quot;harry-potter-magic-awakened&quot;,&quot;isDLC&quot;:false,&quot;isMobile&quot;:true,&quot;thumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/502\/conversions\/thumb_1644443888-sized.jpg&quot;,&quot;hoverThumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/503\/conversions\/thumb_hover_1644443896-sized.jpg&quot;,&quot;platforms&quot;:[{&quot;id&quot;:6,&quot;title&quot;:&quot;Android&quot;,&quot;slug&quot;:&quot;android&quot;,&quot;icon&quot;:&quot;google-play&quot;},{&quot;id&quot;:7,&quot;title&quot;:&quot;Apple iOS&quot;,&quot;slug&quot;:&quot;ios&quot;,&quot;icon&quot;:&quot;apple&quot;}],&quot;has_detail&quot;:0,&quot;glinks&quot;:[{&quot;id&quot;:110,&quot;title&quot;:&quot;Sign Up Now&quot;,&quot;link&quot;:&quot;https:\/\/hpma.sng.link\/Djzmt\/flxj&quot;,&quot;css_class&quot;:&quot;white&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:null}]},{&quot;id&quot;:31,&quot;title&quot;:&quot;Back 4 Blood&quot;,&quot;slug&quot;:&quot;harry-potter-wizards-unite&quot;,&quot;isDLC&quot;:false,&quot;isMobile&quot;:false,&quot;thumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/475\/conversions\/thumb_1637270808-sized.jpg&quot;,&quot;hoverThumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/476\/conversions\/thumb_hover_1637270827-sized.jpg&quot;,&quot;platforms&quot;:[{&quot;id&quot;:2,&quot;title&quot;:&quot;PlayStation&quot;,&quot;slug&quot;:&quot;playstation-4&quot;,&quot;icon&quot;:&quot;playstation&quot;},{&quot;id&quot;:1,&quot;title&quot;:&quot;XBOX&quot;,&quot;slug&quot;:&quot;xbox-one&quot;,&quot;icon&quot;:&quot;xbox&quot;}],&quot;has_detail&quot;:0,&quot;glinks&quot;:[{&quot;id&quot;:108,&quot;title&quot;:&quot;Visit Full Site&quot;,&quot;link&quot;:&quot;https:\/\/back4blood.com&quot;,&quot;css_class&quot;:&quot;white&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:null}]},{&quot;id&quot;:29,&quot;title&quot;:&quot;Mortal Kombat 11&quot;,&quot;slug&quot;:&quot;mortal-kombat-11&quot;,&quot;isDLC&quot;:false,&quot;isMobile&quot;:false,&quot;thumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/540\/conversions\/thumb_1670361023-sized.jpg&quot;,&quot;hoverThumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/541\/conversions\/thumb_hover_1670362096-sized.jpg&quot;,&quot;platforms&quot;:[{&quot;id&quot;:2,&quot;title&quot;:&quot;PlayStation&quot;,&quot;slug&quot;:&quot;playstation-4&quot;,&quot;icon&quot;:&quot;playstation&quot;},{&quot;id&quot;:1,&quot;title&quot;:&quot;XBOX&quot;,&quot;slug&quot;:&quot;xbox-one&quot;,&quot;icon&quot;:&quot;xbox&quot;},{&quot;id&quot;:4,&quot;title&quot;:&quot;PC&quot;,&quot;slug&quot;:&quot;pc&quot;,&quot;icon&quot;:&quot;windows&quot;},{&quot;id&quot;:3,&quot;title&quot;:&quot;Switch&quot;,&quot;slug&quot;:&quot;switch&quot;,&quot;icon&quot;:&quot;nintendo-switch&quot;}],&quot;has_detail&quot;:0,&quot;glinks&quot;:[{&quot;id&quot;:113,&quot;title&quot;:&quot;Visit Full Site&quot;,&quot;link&quot;:&quot;https:\/\/mk11.mortalkombat.com\/purchase&quot;,&quot;css_class&quot;:&quot;white&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:null}]},{&quot;id&quot;:21,&quot;title&quot;:&quot;LEGO\u00ae Marvel Collection&quot;,&quot;slug&quot;:&quot;LEGO-marvel-collection&quot;,&quot;isDLC&quot;:false,&quot;isMobile&quot;:false,&quot;thumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/125\/conversions\/thumb_1550014810-sized.jpg&quot;,&quot;hoverThumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/228\/conversions\/thumb_hover_1556743460-sized.jpg&quot;,&quot;platforms&quot;:[{&quot;id&quot;:2,&quot;title&quot;:&quot;PlayStation&quot;,&quot;slug&quot;:&quot;playstation-4&quot;,&quot;icon&quot;:&quot;playstation&quot;},{&quot;id&quot;:1,&quot;title&quot;:&quot;XBOX&quot;,&quot;slug&quot;:&quot;xbox-one&quot;,&quot;icon&quot;:&quot;xbox&quot;}],&quot;has_detail&quot;:1,&quot;glinks&quot;:[{&quot;id&quot;:64,&quot;title&quot;:&quot;PlayStation 4&quot;,&quot;link&quot;:&quot;https:\/\/store.playstation.com\/en-us\/product\/UP1018-CUSA08469_00-LEGOMARVELCOL000&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;playstation-4&quot;},{&quot;id&quot;:65,&quot;title&quot;:&quot;Xbox One&quot;,&quot;link&quot;:&quot;https:\/\/www.microsoft.com\/en-us\/p\/lego-marvel-collection\/bpd060gwc3t0&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;xbox-one&quot;},{&quot;id&quot;:68,&quot;title&quot;:&quot;Get Support&quot;,&quot;link&quot;:&quot;https:\/\/legogamessupport.wbgames.com\/&quot;,&quot;css_class&quot;:&quot;blue&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:null}]},{&quot;id&quot;:30,&quot;title&quot;:&quot;LEGO\u00ae Harry Potter Collection&quot;,&quot;slug&quot;:&quot;LEGO-harry-potter-collection&quot;,&quot;isDLC&quot;:false,&quot;isMobile&quot;:false,&quot;thumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/341\/conversions\/thumb_1562635156-sized.jpg&quot;,&quot;hoverThumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/258\/conversions\/thumb_hover_1559759372-sized.jpg&quot;,&quot;platforms&quot;:[{&quot;id&quot;:2,&quot;title&quot;:&quot;PlayStation&quot;,&quot;slug&quot;:&quot;playstation-4&quot;,&quot;icon&quot;:&quot;playstation&quot;},{&quot;id&quot;:1,&quot;title&quot;:&quot;XBOX&quot;,&quot;slug&quot;:&quot;xbox-one&quot;,&quot;icon&quot;:&quot;xbox&quot;},{&quot;id&quot;:3,&quot;title&quot;:&quot;Switch&quot;,&quot;slug&quot;:&quot;switch&quot;,&quot;icon&quot;:&quot;nintendo-switch&quot;}],&quot;has_detail&quot;:1,&quot;glinks&quot;:[{&quot;id&quot;:73,&quot;title&quot;:&quot;PlayStation 4&quot;,&quot;link&quot;:&quot;https:\/\/store.playstation.com\/en-us\/product\/UP1018-CUSA05954_00-HARRYPOTTER17000&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;playstation-4&quot;},{&quot;id&quot;:74,&quot;title&quot;:&quot;Xbox One&quot;,&quot;link&quot;:&quot;https:\/\/www.microsoft.com\/en-us\/p\/lego-harry-potter-collection\/c3qj2z8q7hfr?activetab=pivot:overviewtab&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;xbox-one&quot;},{&quot;id&quot;:75,&quot;title&quot;:&quot;Switch&quot;,&quot;link&quot;:&quot;https:\/\/www.nintendo.com\/games\/detail\/lego-harry-potter-collection-switch\/&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;switch&quot;},{&quot;id&quot;:78,&quot;title&quot;:&quot;Get Support&quot;,&quot;link&quot;:&quot;https:\/\/legogamessupport.wbgames.com\/&quot;,&quot;css_class&quot;:&quot;blue&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:null}]},{&quot;id&quot;:5,&quot;title&quot;:&quot;LEGO\u00ae DC Super-Villains&quot;,&quot;slug&quot;:&quot;LEGO-dc-super-villains&quot;,&quot;isDLC&quot;:false,&quot;isMobile&quot;:false,&quot;thumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/154\/conversions\/thumb_1550256824-sized.jpg&quot;,&quot;hoverThumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/225\/conversions\/thumb_hover_1556672231-sized.jpg&quot;,&quot;platforms&quot;:[{&quot;id&quot;:1,&quot;title&quot;:&quot;XBOX&quot;,&quot;slug&quot;:&quot;xbox-one&quot;,&quot;icon&quot;:&quot;xbox&quot;},{&quot;id&quot;:2,&quot;title&quot;:&quot;PlayStation&quot;,&quot;slug&quot;:&quot;playstation-4&quot;,&quot;icon&quot;:&quot;playstation&quot;},{&quot;id&quot;:3,&quot;title&quot;:&quot;Switch&quot;,&quot;slug&quot;:&quot;switch&quot;,&quot;icon&quot;:&quot;nintendo-switch&quot;},{&quot;id&quot;:4,&quot;title&quot;:&quot;PC&quot;,&quot;slug&quot;:&quot;pc&quot;,&quot;icon&quot;:&quot;windows&quot;}],&quot;has_detail&quot;:0,&quot;glinks&quot;:[{&quot;id&quot;:12,&quot;title&quot;:&quot;Visit Full Site&quot;,&quot;link&quot;:&quot;https:\/\/www.lego.com\/en-us\/themes\/dc\/games\/dc-super-villains&quot;,&quot;css_class&quot;:&quot;white&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:null}]},{&quot;id&quot;:12,&quot;title&quot;:&quot;Scribblenauts Mega Pack&quot;,&quot;slug&quot;:&quot;scribblenauts-mega-pack&quot;,&quot;isDLC&quot;:false,&quot;isMobile&quot;:false,&quot;thumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/136\/conversions\/thumb_1550024966-sized.jpg&quot;,&quot;hoverThumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/260\/conversions\/thumb_hover_1559760160-sized.jpg&quot;,&quot;platforms&quot;:[{&quot;id&quot;:1,&quot;title&quot;:&quot;XBOX&quot;,&quot;slug&quot;:&quot;xbox-one&quot;,&quot;icon&quot;:&quot;xbox&quot;},{&quot;id&quot;:2,&quot;title&quot;:&quot;PlayStation&quot;,&quot;slug&quot;:&quot;playstation-4&quot;,&quot;icon&quot;:&quot;playstation&quot;},{&quot;id&quot;:3,&quot;title&quot;:&quot;Switch&quot;,&quot;slug&quot;:&quot;switch&quot;,&quot;icon&quot;:&quot;nintendo-switch&quot;}],&quot;has_detail&quot;:0,&quot;glinks&quot;:[{&quot;id&quot;:13,&quot;title&quot;:&quot;Visit Full Site&quot;,&quot;link&quot;:&quot;https:\/\/scribblenauts.com\/&quot;,&quot;css_class&quot;:&quot;white&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:null}]},{&quot;id&quot;:11,&quot;title&quot;:&quot;Middle-Earth: Shadow of War Definitive Edition&quot;,&quot;slug&quot;:&quot;middle-earth-shadow-of-war-definitive-edition&quot;,&quot;isDLC&quot;:false,&quot;isMobile&quot;:false,&quot;thumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/135\/conversions\/thumb_1550024920-sized.jpg&quot;,&quot;hoverThumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/264\/conversions\/thumb_hover_1559760440-sized.jpg&quot;,&quot;platforms&quot;:[{&quot;id&quot;:1,&quot;title&quot;:&quot;XBOX&quot;,&quot;slug&quot;:&quot;xbox-one&quot;,&quot;icon&quot;:&quot;xbox&quot;},{&quot;id&quot;:2,&quot;title&quot;:&quot;PlayStation&quot;,&quot;slug&quot;:&quot;playstation-4&quot;,&quot;icon&quot;:&quot;playstation&quot;},{&quot;id&quot;:4,&quot;title&quot;:&quot;PC&quot;,&quot;slug&quot;:&quot;pc&quot;,&quot;icon&quot;:&quot;windows&quot;}],&quot;has_detail&quot;:0,&quot;glinks&quot;:[{&quot;id&quot;:23,&quot;title&quot;:&quot;Visit Full Site&quot;,&quot;link&quot;:&quot;https:\/\/www.shadowofwar.com\/purchase\/&quot;,&quot;css_class&quot;:&quot;white&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:null}]},{&quot;id&quot;:10,&quot;title&quot;:&quot;LEGO\u00ae The Incredibles&quot;,&quot;slug&quot;:&quot;LEGO-the-incredibles&quot;,&quot;isDLC&quot;:false,&quot;isMobile&quot;:false,&quot;thumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/134\/conversions\/thumb_1550019391-sized.jpg&quot;,&quot;hoverThumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/242\/conversions\/thumb_hover_1559687977-sized.jpg&quot;,&quot;platforms&quot;:[{&quot;id&quot;:1,&quot;title&quot;:&quot;XBOX&quot;,&quot;slug&quot;:&quot;xbox-one&quot;,&quot;icon&quot;:&quot;xbox&quot;},{&quot;id&quot;:2,&quot;title&quot;:&quot;PlayStation&quot;,&quot;slug&quot;:&quot;playstation-4&quot;,&quot;icon&quot;:&quot;playstation&quot;},{&quot;id&quot;:3,&quot;title&quot;:&quot;Switch&quot;,&quot;slug&quot;:&quot;switch&quot;,&quot;icon&quot;:&quot;nintendo-switch&quot;}],&quot;has_detail&quot;:0,&quot;glinks&quot;:[{&quot;id&quot;:17,&quot;title&quot;:&quot;Visit Full Site&quot;,&quot;link&quot;:&quot;https:\/\/www.lego.com\/en-us\/themes\/disney\/games\/lego-the-incredibles&quot;,&quot;css_class&quot;:&quot;white&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:null}]},{&quot;id&quot;:6,&quot;title&quot;:&quot;Injustice 2 Legendary Edition&quot;,&quot;slug&quot;:&quot;injustice-2-legendary-edition&quot;,&quot;isDLC&quot;:false,&quot;isMobile&quot;:false,&quot;thumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/123\/conversions\/thumb_1550009904-sized.jpg&quot;,&quot;hoverThumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/263\/conversions\/thumb_hover_1559760265-sized.jpg&quot;,&quot;platforms&quot;:[{&quot;id&quot;:4,&quot;title&quot;:&quot;PC&quot;,&quot;slug&quot;:&quot;pc&quot;,&quot;icon&quot;:&quot;windows&quot;},{&quot;id&quot;:1,&quot;title&quot;:&quot;XBOX&quot;,&quot;slug&quot;:&quot;xbox-one&quot;,&quot;icon&quot;:&quot;xbox&quot;},{&quot;id&quot;:2,&quot;title&quot;:&quot;PlayStation&quot;,&quot;slug&quot;:&quot;playstation-4&quot;,&quot;icon&quot;:&quot;playstation&quot;}],&quot;has_detail&quot;:0,&quot;glinks&quot;:[{&quot;id&quot;:19,&quot;title&quot;:&quot;Visit Full Site&quot;,&quot;link&quot;:&quot;https:\/\/www.injustice.com\/&quot;,&quot;css_class&quot;:&quot;white&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:null}]},{&quot;id&quot;:13,&quot;title&quot;:&quot;Scribblenauts Showdown&quot;,&quot;slug&quot;:&quot;scribblenauts-showdown&quot;,&quot;isDLC&quot;:false,&quot;isMobile&quot;:false,&quot;thumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/137\/conversions\/thumb_1550024995-sized.jpg&quot;,&quot;hoverThumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/262\/conversions\/thumb_hover_1559760242-sized.jpg&quot;,&quot;platforms&quot;:[{&quot;id&quot;:1,&quot;title&quot;:&quot;XBOX&quot;,&quot;slug&quot;:&quot;xbox-one&quot;,&quot;icon&quot;:&quot;xbox&quot;},{&quot;id&quot;:2,&quot;title&quot;:&quot;PlayStation&quot;,&quot;slug&quot;:&quot;playstation-4&quot;,&quot;icon&quot;:&quot;playstation&quot;},{&quot;id&quot;:3,&quot;title&quot;:&quot;Switch&quot;,&quot;slug&quot;:&quot;switch&quot;,&quot;icon&quot;:&quot;nintendo-switch&quot;}],&quot;has_detail&quot;:0,&quot;glinks&quot;:[{&quot;id&quot;:18,&quot;title&quot;:&quot;Visit Full Site&quot;,&quot;link&quot;:&quot;https:\/\/www.warnerbros.com\/games-and-apps\/scribblenauts-showdown&quot;,&quot;css_class&quot;:&quot;white&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:null}]},{&quot;id&quot;:4,&quot;title&quot;:&quot;Game of Thrones Conquest&quot;,&quot;slug&quot;:&quot;game-of-thrones-conquest&quot;,&quot;isDLC&quot;:false,&quot;isMobile&quot;:true,&quot;thumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/120\/conversions\/thumb_1549824185-sized.jpg&quot;,&quot;hoverThumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/227\/conversions\/thumb_hover_1556742717-sized.jpg&quot;,&quot;platforms&quot;:[{&quot;id&quot;:6,&quot;title&quot;:&quot;Android&quot;,&quot;slug&quot;:&quot;android&quot;,&quot;icon&quot;:&quot;google-play&quot;},{&quot;id&quot;:7,&quot;title&quot;:&quot;Apple iOS&quot;,&quot;slug&quot;:&quot;ios&quot;,&quot;icon&quot;:&quot;apple&quot;}],&quot;has_detail&quot;:1,&quot;glinks&quot;:[{&quot;id&quot;:6,&quot;title&quot;:&quot;The App Store&quot;,&quot;link&quot;:&quot;https:\/\/itunes.apple.com\/app\/id1035712810?mt=8&quot;,&quot;css_class&quot;:&quot;image svg clean&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;ios-white&quot;},{&quot;id&quot;:7,&quot;title&quot;:&quot;Google Play&quot;,&quot;link&quot;:&quot;https:\/\/play.google.com\/store\/apps\/details?id=com.wb.goog.got.conquest&amp;referrer=adjust_reftag%3DcDJjMzCx87FsA%26utm_source%3DOwned%253AWeb%26utm_campaign%3Dgotccom&quot;,&quot;css_class&quot;:&quot;image svg clean&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;android-white&quot;},{&quot;id&quot;:11,&quot;title&quot;:&quot;Get Support&quot;,&quot;link&quot;:&quot;https:\/\/hbogamessupport.wbgames.com\/&quot;,&quot;css_class&quot;:&quot;blue&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:null}]},{&quot;id&quot;:18,&quot;title&quot;:&quot;LEGO\u00ae Ninjago Movie Videogame&quot;,&quot;slug&quot;:&quot;LEGO-ninjago-movie-videogame&quot;,&quot;isDLC&quot;:false,&quot;isMobile&quot;:false,&quot;thumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/155\/conversions\/thumb_1550257207-sized.jpg&quot;,&quot;hoverThumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/266\/conversions\/thumb_hover_1559760707-sized.jpg&quot;,&quot;platforms&quot;:[{&quot;id&quot;:1,&quot;title&quot;:&quot;XBOX&quot;,&quot;slug&quot;:&quot;xbox-one&quot;,&quot;icon&quot;:&quot;xbox&quot;},{&quot;id&quot;:2,&quot;title&quot;:&quot;PlayStation&quot;,&quot;slug&quot;:&quot;playstation-4&quot;,&quot;icon&quot;:&quot;playstation&quot;},{&quot;id&quot;:3,&quot;title&quot;:&quot;Switch&quot;,&quot;slug&quot;:&quot;switch&quot;,&quot;icon&quot;:&quot;nintendo-switch&quot;},{&quot;id&quot;:4,&quot;title&quot;:&quot;PC&quot;,&quot;slug&quot;:&quot;pc&quot;,&quot;icon&quot;:&quot;windows&quot;}],&quot;has_detail&quot;:1,&quot;glinks&quot;:[{&quot;id&quot;:45,&quot;title&quot;:&quot;PlayStation 4&quot;,&quot;link&quot;:&quot;https:\/\/www.playstation.com\/en-us\/games\/lego-ninjago-movie-video-game-ps4\/&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;playstation-4&quot;},{&quot;id&quot;:46,&quot;title&quot;:&quot;Xbox One&quot;,&quot;link&quot;:&quot;https:\/\/www.microsoft.com\/en-us\/p\/the-lego-ninjago-movie-video-game\/bqkknpkx1c4p?activetab=pivot%3Aoverviewtab&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;xbox-one&quot;},{&quot;id&quot;:47,&quot;title&quot;:&quot;Switch&quot;,&quot;link&quot;:&quot;https:\/\/www.nintendo.com\/games\/detail\/lego-ninjago-movie-video-game-switch&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;switch&quot;},{&quot;id&quot;:48,&quot;title&quot;:&quot;Steam&quot;,&quot;link&quot;:&quot;https:\/\/store.steampowered.com\/app\/640590\/The_LEGO_NINJAGO_Movie_Video_Game\/&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;steam&quot;},{&quot;id&quot;:49,&quot;title&quot;:&quot;Get Support&quot;,&quot;link&quot;:&quot;https:\/\/legogamessupport.wbgames.com\/&quot;,&quot;css_class&quot;:&quot;blue&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:null}]},{&quot;id&quot;:25,&quot;title&quot;:&quot;Cars 3: Driven to Win&quot;,&quot;slug&quot;:&quot;cars-3-driven-to-win&quot;,&quot;isDLC&quot;:false,&quot;isMobile&quot;:false,&quot;thumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/330\/conversions\/thumb_1560901123-sized.jpg&quot;,&quot;hoverThumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/331\/conversions\/thumb_hover_1560901221-sized.jpg&quot;,&quot;platforms&quot;:[{&quot;id&quot;:3,&quot;title&quot;:&quot;Switch&quot;,&quot;slug&quot;:&quot;switch&quot;,&quot;icon&quot;:&quot;nintendo-switch&quot;},{&quot;id&quot;:2,&quot;title&quot;:&quot;PlayStation&quot;,&quot;slug&quot;:&quot;playstation-4&quot;,&quot;icon&quot;:&quot;playstation&quot;},{&quot;id&quot;:1,&quot;title&quot;:&quot;XBOX&quot;,&quot;slug&quot;:&quot;xbox-one&quot;,&quot;icon&quot;:&quot;xbox&quot;}],&quot;has_detail&quot;:1,&quot;glinks&quot;:[{&quot;id&quot;:50,&quot;title&quot;:&quot;PlayStation 4&quot;,&quot;link&quot;:&quot;https:\/\/www.playstation.com\/en-us\/games\/cars-3-driven-to-win-ps4\/&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;playstation-4&quot;},{&quot;id&quot;:51,&quot;title&quot;:&quot;Xbox One&quot;,&quot;link&quot;:&quot;https:\/\/www.microsoft.com\/en-us\/p\/cars-3-driven-to-win\/bzks084zsxj4?activetab=pivot:overviewtab&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;xbox-one&quot;},{&quot;id&quot;:52,&quot;title&quot;:&quot;Switch&quot;,&quot;link&quot;:&quot;https:\/\/www.nintendo.com\/games\/detail\/cars-3-driven-to-win-switch&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;switch&quot;},{&quot;id&quot;:53,&quot;title&quot;:&quot;Get Support&quot;,&quot;link&quot;:&quot;https:\/\/wbgamessupport.wbgames.com\/&quot;,&quot;css_class&quot;:&quot;blue&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:null}]},{&quot;id&quot;:7,&quot;title&quot;:&quot;Injustice 2 Mobile&quot;,&quot;slug&quot;:&quot;injustice-2-mobile&quot;,&quot;isDLC&quot;:false,&quot;isMobile&quot;:true,&quot;thumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/355\/conversions\/thumb_1562713356-sized.jpg&quot;,&quot;hoverThumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/354\/conversions\/thumb_hover_1562713177-sized.jpg&quot;,&quot;platforms&quot;:[{&quot;id&quot;:6,&quot;title&quot;:&quot;Android&quot;,&quot;slug&quot;:&quot;android&quot;,&quot;icon&quot;:&quot;google-play&quot;},{&quot;id&quot;:7,&quot;title&quot;:&quot;Apple iOS&quot;,&quot;slug&quot;:&quot;ios&quot;,&quot;icon&quot;:&quot;apple&quot;}],&quot;has_detail&quot;:1,&quot;glinks&quot;:[{&quot;id&quot;:28,&quot;title&quot;:&quot;The App Store&quot;,&quot;link&quot;:&quot;https:\/\/itunes.apple.com\/us\/app\/injustice-2\/id1109008423?mt=8&quot;,&quot;css_class&quot;:&quot;image svg clean&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;ios-white&quot;},{&quot;id&quot;:29,&quot;title&quot;:&quot;Google Play&quot;,&quot;link&quot;:&quot;https:\/\/play.google.com\/store\/apps\/details?id=com.wb.goog.injustice.brawler2017&amp;hl=en_US&quot;,&quot;css_class&quot;:&quot;image svg clean&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;android-white&quot;},{&quot;id&quot;:30,&quot;title&quot;:&quot;Get Support&quot;,&quot;link&quot;:&quot;https:\/\/dcgamessupport.wbgames.com\/&quot;,&quot;css_class&quot;:&quot;blue&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:null}]},{&quot;id&quot;:35,&quot;title&quot;:&quot;Batman: Arkham VR&quot;,&quot;slug&quot;:&quot;batman-arkham-vr&quot;,&quot;isDLC&quot;:false,&quot;isMobile&quot;:false,&quot;thumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/370\/conversions\/thumb_1562788796-sized.jpg&quot;,&quot;hoverThumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/369\/conversions\/thumb_hover_1562788679-sized.jpg&quot;,&quot;platforms&quot;:[{&quot;id&quot;:2,&quot;title&quot;:&quot;PlayStation&quot;,&quot;slug&quot;:&quot;playstation-4&quot;,&quot;icon&quot;:&quot;playstation&quot;},{&quot;id&quot;:4,&quot;title&quot;:&quot;PC&quot;,&quot;slug&quot;:&quot;pc&quot;,&quot;icon&quot;:&quot;windows&quot;}],&quot;has_detail&quot;:1,&quot;glinks&quot;:[{&quot;id&quot;:87,&quot;title&quot;:&quot;Playstation 4&quot;,&quot;link&quot;:&quot;https:\/\/www.playstation.com\/en-us\/games\/batman-arkham-vr-ps4\/&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;playstation-4&quot;},{&quot;id&quot;:88,&quot;title&quot;:&quot;Steam&quot;,&quot;link&quot;:&quot;https:\/\/store.steampowered.com\/app\/502820\/Batman_Arkham_VR\/&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;steam&quot;},{&quot;id&quot;:93,&quot;title&quot;:&quot;Get Support&quot;,&quot;link&quot;:&quot;https:\/\/dcgamessupport.wbgames.com\/&quot;,&quot;css_class&quot;:&quot;blue&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:null}]},{&quot;id&quot;:19,&quot;title&quot;:&quot;LEGO\u00ae City Undercover&quot;,&quot;slug&quot;:&quot;LEGO-city-undercover&quot;,&quot;isDLC&quot;:false,&quot;isMobile&quot;:false,&quot;thumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/34\/conversions\/thumb_1549325681-sized.jpg&quot;,&quot;hoverThumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/267\/conversions\/thumb_hover_1559760831-sized.jpg&quot;,&quot;platforms&quot;:[{&quot;id&quot;:1,&quot;title&quot;:&quot;XBOX&quot;,&quot;slug&quot;:&quot;xbox-one&quot;,&quot;icon&quot;:&quot;xbox&quot;},{&quot;id&quot;:2,&quot;title&quot;:&quot;PlayStation&quot;,&quot;slug&quot;:&quot;playstation-4&quot;,&quot;icon&quot;:&quot;playstation&quot;},{&quot;id&quot;:3,&quot;title&quot;:&quot;Switch&quot;,&quot;slug&quot;:&quot;switch&quot;,&quot;icon&quot;:&quot;nintendo-switch&quot;},{&quot;id&quot;:4,&quot;title&quot;:&quot;PC&quot;,&quot;slug&quot;:&quot;pc&quot;,&quot;icon&quot;:&quot;windows&quot;}],&quot;has_detail&quot;:1,&quot;glinks&quot;:[{&quot;id&quot;:39,&quot;title&quot;:&quot;PlayStation 4&quot;,&quot;link&quot;:&quot;https:\/\/store.playstation.com\/en-us\/product\/UP1018-CUSA06549_00-LEGOCITYUNDERCOV&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;playstation-4&quot;},{&quot;id&quot;:40,&quot;title&quot;:&quot;Xbox One&quot;,&quot;link&quot;:&quot;https:\/\/www.microsoft.com\/en-us\/p\/lego-city-undercover\/bs5rxll3wq2j?activetab=pivot%3Aoverviewtab&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;xbox-one&quot;},{&quot;id&quot;:41,&quot;title&quot;:&quot;Switch&quot;,&quot;link&quot;:&quot;https:\/\/www.nintendo.com\/games\/detail\/lego-city-undercover-switch&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;switch&quot;},{&quot;id&quot;:42,&quot;title&quot;:&quot;Steam&quot;,&quot;link&quot;:&quot;https:\/\/store.steampowered.com\/app\/578330\/LEGO_City_Undercover\/&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;steam&quot;},{&quot;id&quot;:44,&quot;title&quot;:&quot;Get Support&quot;,&quot;link&quot;:&quot;https:\/\/legogamessupport.wbgames.com\/&quot;,&quot;css_class&quot;:&quot;blue&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:null}]},{&quot;id&quot;:16,&quot;title&quot;:&quot;LEGO\u00ae Worlds&quot;,&quot;slug&quot;:&quot;LEGO-worlds&quot;,&quot;isDLC&quot;:false,&quot;isMobile&quot;:false,&quot;thumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/31\/conversions\/thumb_1549325657-sized.jpg&quot;,&quot;hoverThumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/245\/conversions\/thumb_hover_1559690107-sized.jpg&quot;,&quot;platforms&quot;:[{&quot;id&quot;:3,&quot;title&quot;:&quot;Switch&quot;,&quot;slug&quot;:&quot;switch&quot;,&quot;icon&quot;:&quot;nintendo-switch&quot;},{&quot;id&quot;:4,&quot;title&quot;:&quot;PC&quot;,&quot;slug&quot;:&quot;pc&quot;,&quot;icon&quot;:&quot;windows&quot;},{&quot;id&quot;:1,&quot;title&quot;:&quot;XBOX&quot;,&quot;slug&quot;:&quot;xbox-one&quot;,&quot;icon&quot;:&quot;xbox&quot;},{&quot;id&quot;:2,&quot;title&quot;:&quot;PlayStation&quot;,&quot;slug&quot;:&quot;playstation-4&quot;,&quot;icon&quot;:&quot;playstation&quot;}],&quot;has_detail&quot;:1,&quot;glinks&quot;:[{&quot;id&quot;:35,&quot;title&quot;:&quot;PlayStation 4&quot;,&quot;link&quot;:&quot;https:\/\/www.playstation.com\/en-us\/games\/lego-worlds-ps4\/&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;playstation-4&quot;},{&quot;id&quot;:36,&quot;title&quot;:&quot;Xbox One&quot;,&quot;link&quot;:&quot;https:\/\/www.microsoft.com\/en-us\/p\/lego-worlds\/bwpv4qxw8w2c?activetab=pivot:overviewtab&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;xbox-one&quot;},{&quot;id&quot;:37,&quot;title&quot;:&quot;Switch&quot;,&quot;link&quot;:&quot;https:\/\/www.nintendo.com\/games\/detail\/lego-worlds-switch&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;switch&quot;},{&quot;id&quot;:38,&quot;title&quot;:&quot;Steam&quot;,&quot;link&quot;:&quot;https:\/\/store.steampowered.com\/app\/332310\/LEGO_Worlds\/&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;steam&quot;},{&quot;id&quot;:43,&quot;title&quot;:&quot;Get Support&quot;,&quot;link&quot;:&quot;https:\/\/legogamessupport.wbgames.com\/&quot;,&quot;css_class&quot;:&quot;blue&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:null}]},{&quot;id&quot;:33,&quot;title&quot;:&quot;Batman: Arkham City&quot;,&quot;slug&quot;:&quot;batman-arkham-city&quot;,&quot;isDLC&quot;:false,&quot;isMobile&quot;:false,&quot;thumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/361\/conversions\/thumb_1562785334-sized.jpg&quot;,&quot;hoverThumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/364\/conversions\/thumb_hover_1562787511-sized.jpg&quot;,&quot;platforms&quot;:[{&quot;id&quot;:2,&quot;title&quot;:&quot;PlayStation&quot;,&quot;slug&quot;:&quot;playstation-4&quot;,&quot;icon&quot;:&quot;playstation&quot;},{&quot;id&quot;:1,&quot;title&quot;:&quot;XBOX&quot;,&quot;slug&quot;:&quot;xbox-one&quot;,&quot;icon&quot;:&quot;xbox&quot;},{&quot;id&quot;:4,&quot;title&quot;:&quot;PC&quot;,&quot;slug&quot;:&quot;pc&quot;,&quot;icon&quot;:&quot;windows&quot;}],&quot;has_detail&quot;:1,&quot;glinks&quot;:[{&quot;id&quot;:89,&quot;title&quot;:&quot;PlayStation 4&quot;,&quot;link&quot;:&quot;https:\/\/store.playstation.com\/en-us\/product\/UP1018-NPUB30754_00-ARKHAMCITY00GAME&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;playstation-4&quot;},{&quot;id&quot;:90,&quot;title&quot;:&quot;Xbox One&quot;,&quot;link&quot;:&quot;https:\/\/www.microsoft.com\/en-us\/p\/batman-return-to-arkham-arkham-city\/btv379cshgq0?activetab=pivot:overviewtab&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;xbox-one&quot;},{&quot;id&quot;:91,&quot;title&quot;:&quot;Steam&quot;,&quot;link&quot;:&quot;https:\/\/store.steampowered.com\/app\/200260\/Batman_Arkham_City__Game_of_the_Year_Edition\/&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;steam&quot;},{&quot;id&quot;:92,&quot;title&quot;:&quot;Get Support&quot;,&quot;link&quot;:&quot;https:\/\/dcgamessupport.wbgames.com\/&quot;,&quot;css_class&quot;:&quot;blue&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:null}]},{&quot;id&quot;:15,&quot;title&quot;:&quot;Mortal Kombat XL&quot;,&quot;slug&quot;:&quot;mortal-kombat-xl&quot;,&quot;isDLC&quot;:false,&quot;isMobile&quot;:false,&quot;thumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/29\/conversions\/thumb_1549325642-sized.jpg&quot;,&quot;hoverThumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/268\/conversions\/thumb_hover_1559760925-sized.jpg&quot;,&quot;platforms&quot;:[{&quot;id&quot;:4,&quot;title&quot;:&quot;PC&quot;,&quot;slug&quot;:&quot;pc&quot;,&quot;icon&quot;:&quot;windows&quot;},{&quot;id&quot;:1,&quot;title&quot;:&quot;XBOX&quot;,&quot;slug&quot;:&quot;xbox-one&quot;,&quot;icon&quot;:&quot;xbox&quot;},{&quot;id&quot;:2,&quot;title&quot;:&quot;PlayStation&quot;,&quot;slug&quot;:&quot;playstation-4&quot;,&quot;icon&quot;:&quot;playstation&quot;}],&quot;has_detail&quot;:1,&quot;glinks&quot;:[{&quot;id&quot;:31,&quot;title&quot;:&quot;PlayStation 4&quot;,&quot;link&quot;:&quot;https:\/\/store.playstation.com\/en-us\/product\/UP1018-CUSA03589_00-MORTALKOMBATXL00&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;playstation-4&quot;},{&quot;id&quot;:32,&quot;title&quot;:&quot;XBOX One&quot;,&quot;link&quot;:&quot;https:\/\/www.microsoft.com\/en-us\/p\/mortal-kombat-xl\/c20209h1d7lz?activetab=pivot:overviewtab&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;xbox-one&quot;},{&quot;id&quot;:33,&quot;title&quot;:&quot;Steam&quot;,&quot;link&quot;:&quot;https:\/\/store.steampowered.com\/sub\/128345\/&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;steam&quot;},{&quot;id&quot;:34,&quot;title&quot;:&quot;Get Support&quot;,&quot;link&quot;:&quot;https:\/\/mortalkombatgamessupport.wbgames.com\/&quot;,&quot;css_class&quot;:&quot;blue&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:null}]},{&quot;id&quot;:32,&quot;title&quot;:&quot;Batman: Arkham Knight&quot;,&quot;slug&quot;:&quot;batman-arkham-knight&quot;,&quot;isDLC&quot;:false,&quot;isMobile&quot;:false,&quot;thumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/373\/conversions\/thumb_1562799719-sized.jpg&quot;,&quot;hoverThumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/374\/conversions\/thumb_hover_1562800050-sized.jpg&quot;,&quot;platforms&quot;:[{&quot;id&quot;:2,&quot;title&quot;:&quot;PlayStation&quot;,&quot;slug&quot;:&quot;playstation-4&quot;,&quot;icon&quot;:&quot;playstation&quot;},{&quot;id&quot;:1,&quot;title&quot;:&quot;XBOX&quot;,&quot;slug&quot;:&quot;xbox-one&quot;,&quot;icon&quot;:&quot;xbox&quot;},{&quot;id&quot;:4,&quot;title&quot;:&quot;PC&quot;,&quot;slug&quot;:&quot;pc&quot;,&quot;icon&quot;:&quot;windows&quot;}],&quot;has_detail&quot;:0,&quot;glinks&quot;:[{&quot;id&quot;:86,&quot;title&quot;:&quot;Visit Full Site&quot;,&quot;link&quot;:&quot;https:\/\/rocksteadyltd.com\/#arkham-knight&quot;,&quot;css_class&quot;:&quot;white&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:null}]},{&quot;id&quot;:27,&quot;title&quot;:&quot;Mortal Kombat Mobile&quot;,&quot;slug&quot;:&quot;mortal-kombat-mobile&quot;,&quot;isDLC&quot;:false,&quot;isMobile&quot;:true,&quot;thumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/347\/conversions\/thumb_1562700917-sized.jpg&quot;,&quot;hoverThumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/352\/conversions\/thumb_hover_1562703757-sized.jpg&quot;,&quot;platforms&quot;:[{&quot;id&quot;:7,&quot;title&quot;:&quot;Apple iOS&quot;,&quot;slug&quot;:&quot;ios&quot;,&quot;icon&quot;:&quot;apple&quot;},{&quot;id&quot;:6,&quot;title&quot;:&quot;Android&quot;,&quot;slug&quot;:&quot;android&quot;,&quot;icon&quot;:&quot;google-play&quot;}],&quot;has_detail&quot;:1,&quot;glinks&quot;:[{&quot;id&quot;:25,&quot;title&quot;:&quot;The App Store&quot;,&quot;link&quot;:&quot;https:\/\/itunes.apple.com\/us\/app\/mortal-kombat\/id949701151?mt=8&quot;,&quot;css_class&quot;:&quot;image svg clean&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;ios-white&quot;},{&quot;id&quot;:26,&quot;title&quot;:&quot;Google Play&quot;,&quot;link&quot;:&quot;https:\/\/play.google.com\/store\/apps\/details?id=com.wb.goog.mkx&amp;hl=en_US&quot;,&quot;css_class&quot;:&quot;image svg clean&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;android-white&quot;},{&quot;id&quot;:27,&quot;title&quot;:&quot;Get Support&quot;,&quot;link&quot;:&quot;https:\/\/mortalkombatgamessupport.wbgames.com\/&quot;,&quot;css_class&quot;:&quot;blue&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:null}]},{&quot;id&quot;:34,&quot;title&quot;:&quot;Middle-Earth: Shadow of Mordor&quot;,&quot;slug&quot;:&quot;middle-earth-shadow-of-mordor&quot;,&quot;isDLC&quot;:false,&quot;isMobile&quot;:false,&quot;thumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/389\/conversions\/thumb_1563324914-sized.jpg&quot;,&quot;hoverThumb&quot;:&quot;https:\/\/cdn.wbgames.com\/media\/391\/conversions\/thumb_hover_1563325941-sized.jpg&quot;,&quot;platforms&quot;:[{&quot;id&quot;:2,&quot;title&quot;:&quot;PlayStation&quot;,&quot;slug&quot;:&quot;playstation-4&quot;,&quot;icon&quot;:&quot;playstation&quot;},{&quot;id&quot;:1,&quot;title&quot;:&quot;XBOX&quot;,&quot;slug&quot;:&quot;xbox-one&quot;,&quot;icon&quot;:&quot;xbox&quot;},{&quot;id&quot;:4,&quot;title&quot;:&quot;PC&quot;,&quot;slug&quot;:&quot;pc&quot;,&quot;icon&quot;:&quot;windows&quot;}],&quot;has_detail&quot;:1,&quot;glinks&quot;:[{&quot;id&quot;:101,&quot;title&quot;:&quot;PlayStation 4&quot;,&quot;link&quot;:&quot;https:\/\/store.playstation.com\/en-us\/product\/UP1018-CUSA01939_00-SHADOWMORDORGOTY&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;playstation-4&quot;},{&quot;id&quot;:102,&quot;title&quot;:&quot;Xbox One&quot;,&quot;link&quot;:&quot;https:\/\/www.microsoft.com\/en-us\/p\/middle-earth-shadow-of-mordor-game-of-the-year-edition\/bpbktsc16mwt?activetab=pivot%3Aoverviewtab&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;xbox-one&quot;},{&quot;id&quot;:103,&quot;title&quot;:&quot;Steam&quot;,&quot;link&quot;:&quot;https:\/\/store.steampowered.com\/sub\/51209\/&quot;,&quot;css_class&quot;:&quot;image svg&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:&quot;steam&quot;},{&quot;id&quot;:104,&quot;title&quot;:&quot;Get Support&quot;,&quot;link&quot;:&quot;https:\/\/middle-earthgamessupport.wbgames.com\/&quot;,&quot;css_class&quot;:&quot;blue&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;image&quot;:null}]}],&quot;defaultPlatform&quot;:{&quot;id&quot;:7,&quot;created_at&quot;:&quot;2019-05-28 17:04:00&quot;,&quot;updated_at&quot;:&quot;2019-05-28 17:04:00&quot;,&quot;slug&quot;:&quot;all&quot;,&quot;title&quot;:&quot;All Devices&quot;,&quot;display_order&quot;:100},&quot;defaultGenre&quot;:{&quot;id&quot;:1,&quot;created_at&quot;:&quot;2019-05-28 17:04:01&quot;,&quot;updated_at&quot;:&quot;2019-05-28 17:04:01&quot;,&quot;slug&quot;:&quot;all&quot;,&quot;title&quot;:{&quot;en-US&quot;:&quot;All Genres&quot;}},&quot;defaultRating&quot;:{&quot;id&quot;:1,&quot;created_at&quot;:&quot;2019-05-28 17:04:01&quot;,&quot;updated_at&quot;:&quot;2019-05-28 17:04:01&quot;,&quot;slug&quot;:&quot;all&quot;,&quot;title&quot;:&quot;All Ratings&quot;,&quot;region&quot;:&quot;north-america&quot;},&quot;defaultPlatformLabel&quot;:&quot;All Devices&quot;,&quot;defaultGenreLabel&quot;:&quot;All Genres&quot;,&quot;defaultRatingLabel&quot;:&quot;All Ratings&quot;,&quot;tags&quot;:[{&quot;id&quot;:8,&quot;created_at&quot;:&quot;2021-11-18 21:38:12&quot;,&quot;updated_at&quot;:&quot;2021-11-18 21:38:12&quot;,&quot;slug&quot;:&quot;mobile&quot;,&quot;title&quot;:&quot;Mobile&quot;,&quot;display_order&quot;:0},{&quot;id&quot;:2,&quot;created_at&quot;:&quot;2019-02-04 21:30:23&quot;,&quot;updated_at&quot;:&quot;2019-07-08 17:59:48&quot;,&quot;slug&quot;:&quot;playstation-4&quot;,&quot;title&quot;:&quot;PlayStation 4&quot;,&quot;display_order&quot;:1},{&quot;id&quot;:1,&quot;created_at&quot;:&quot;2019-02-04 21:30:23&quot;,&quot;updated_at&quot;:&quot;2019-02-04 21:30:23&quot;,&quot;slug&quot;:&quot;xbox-one&quot;,&quot;title&quot;:&quot;XBOX One&quot;,&quot;display_order&quot;:2},{&quot;id&quot;:3,&quot;created_at&quot;:&quot;2019-02-04 21:30:23&quot;,&quot;updated_at&quot;:&quot;2019-02-04 21:30:23&quot;,&quot;slug&quot;:&quot;switch&quot;,&quot;title&quot;:&quot;Switch&quot;,&quot;display_order&quot;:3},{&quot;id&quot;:4,&quot;created_at&quot;:&quot;2019-02-04 21:30:23&quot;,&quot;updated_at&quot;:&quot;2019-02-04 21:30:23&quot;,&quot;slug&quot;:&quot;pc&quot;,&quot;title&quot;:&quot;PC&quot;,&quot;display_order&quot;:5},{&quot;id&quot;:6,&quot;created_at&quot;:&quot;2019-05-01 19:02:51&quot;,&quot;updated_at&quot;:&quot;2019-05-01 19:02:51&quot;,&quot;slug&quot;:&quot;season-pass&quot;,&quot;title&quot;:&quot;Season Pass&quot;,&quot;display_order&quot;:6}],&quot;genres&quot;:[{&quot;id&quot;:10,&quot;created_at&quot;:&quot;2019-05-28 19:37:27&quot;,&quot;updated_at&quot;:&quot;2019-05-28 19:37:27&quot;,&quot;slug&quot;:&quot;rpg&quot;,&quot;title&quot;:{&quot;en-US&quot;:&quot;RPG&quot;}},{&quot;id&quot;:8,&quot;created_at&quot;:&quot;2019-05-28 19:36:58&quot;,&quot;updated_at&quot;:&quot;2019-05-28 19:36:58&quot;,&quot;slug&quot;:&quot;shooting&quot;,&quot;title&quot;:{&quot;en-US&quot;:&quot;Shooting&quot;}},{&quot;id&quot;:3,&quot;created_at&quot;:&quot;2019-05-28 19:36:07&quot;,&quot;updated_at&quot;:&quot;2019-05-28 19:36:07&quot;,&quot;slug&quot;:&quot;strategy&quot;,&quot;title&quot;:{&quot;en-US&quot;:&quot;Strategy&quot;}},{&quot;id&quot;:13,&quot;created_at&quot;:&quot;2019-06-05 19:25:13&quot;,&quot;updated_at&quot;:&quot;2019-06-05 19:25:13&quot;,&quot;slug&quot;:&quot;racing&quot;,&quot;title&quot;:{&quot;en-US&quot;:&quot;Racing&quot;}},{&quot;id&quot;:7,&quot;created_at&quot;:&quot;2019-05-28 19:36:47&quot;,&quot;updated_at&quot;:&quot;2019-05-28 19:36:47&quot;,&quot;slug&quot;:&quot;fantasy&quot;,&quot;title&quot;:{&quot;en-US&quot;:&quot;Fantasy&quot;}},{&quot;id&quot;:2,&quot;created_at&quot;:&quot;2019-05-28 19:35:41&quot;,&quot;updated_at&quot;:&quot;2019-05-28 19:35:41&quot;,&quot;slug&quot;:&quot;family&quot;,&quot;title&quot;:{&quot;en-US&quot;:&quot;Family&quot;}},{&quot;id&quot;:5,&quot;created_at&quot;:&quot;2019-05-28 19:36:30&quot;,&quot;updated_at&quot;:&quot;2019-05-28 19:36:30&quot;,&quot;slug&quot;:&quot;sports&quot;,&quot;title&quot;:{&quot;en-US&quot;:&quot;Sports&quot;}},{&quot;id&quot;:12,&quot;created_at&quot;:&quot;2019-05-28 19:48:43&quot;,&quot;updated_at&quot;:&quot;2019-05-28 19:48:43&quot;,&quot;slug&quot;:&quot;action&quot;,&quot;title&quot;:{&quot;en-US&quot;:&quot;Action&quot;}},{&quot;id&quot;:6,&quot;created_at&quot;:&quot;2019-05-28 19:36:41&quot;,&quot;updated_at&quot;:&quot;2019-05-28 19:36:41&quot;,&quot;slug&quot;:&quot;adventure&quot;,&quot;title&quot;:{&quot;en-US&quot;:&quot;Adventure&quot;}},{&quot;id&quot;:9,&quot;created_at&quot;:&quot;2019-05-28 19:37:07&quot;,&quot;updated_at&quot;:&quot;2019-05-28 19:37:07&quot;,&quot;slug&quot;:&quot;simulation&quot;,&quot;title&quot;:{&quot;en-US&quot;:&quot;Simulation&quot;}},{&quot;id&quot;:11,&quot;created_at&quot;:&quot;2019-05-28 19:43:29&quot;,&quot;updated_at&quot;:&quot;2019-05-28 19:43:29&quot;,&quot;slug&quot;:&quot;fighting&quot;,&quot;title&quot;:{&quot;en-US&quot;:&quot;Fighting&quot;}}],&quot;ratings&quot;:[{&quot;id&quot;:2,&quot;created_at&quot;:&quot;2019-05-28 17:04:31&quot;,&quot;updated_at&quot;:&quot;2019-05-28 17:04:31&quot;,&quot;slug&quot;:&quot;esrb-everyone&quot;,&quot;title&quot;:&quot;Everyone&quot;,&quot;region&quot;:&quot;north-america&quot;},{&quot;id&quot;:3,&quot;created_at&quot;:&quot;2019-05-28 17:04:31&quot;,&quot;updated_at&quot;:&quot;2019-05-28 17:04:31&quot;,&quot;slug&quot;:&quot;esrb-everyone-10&quot;,&quot;title&quot;:&quot;Everyone 10+&quot;,&quot;region&quot;:&quot;north-america&quot;},{&quot;id&quot;:4,&quot;created_at&quot;:&quot;2019-05-28 17:04:31&quot;,&quot;updated_at&quot;:&quot;2019-05-28 17:04:31&quot;,&quot;slug&quot;:&quot;esrb-teen&quot;,&quot;title&quot;:&quot;Teen&quot;,&quot;region&quot;:&quot;north-america&quot;},{&quot;id&quot;:5,&quot;created_at&quot;:&quot;2019-05-28 17:04:31&quot;,&quot;updated_at&quot;:&quot;2019-05-28 17:04:31&quot;,&quot;slug&quot;:&quot;esrb-mature&quot;,&quot;title&quot;:&quot;Mature&quot;,&quot;region&quot;:&quot;north-america&quot;},{&quot;id&quot;:6,&quot;created_at&quot;:&quot;2019-05-28 17:04:31&quot;,&quot;updated_at&quot;:&quot;2019-05-28 17:04:31&quot;,&quot;slug&quot;:&quot;esrb-rating-pending&quot;,&quot;title&quot;:&quot;Rating Pending&quot;,&quot;region&quot;:&quot;north-america&quot;}]}"></find-games>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section id="WBPlay">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col">
+
+                <hr class="main-grad">
+
+
+                <div class="wrap">
+
+                    <div class="meta">
+
+
+                        <h2>
+                            Be The First To Know
+                        </h2>
+
+                        <p class="">
+                            Sign up and never miss an update.
+                        </p>
+
+                        <a href="#" class="btn btn-white btn-block" @click.prevent="launchEmailSignup"
+                           aria-label="Show email signup form.">
+                            Stay Connected
+                        </a>
+
+                    </div>
+
+                    <div class="imgWrap">
+
+                        <img src="https://cdn.wbgames.com/static/wb-play-slide-1.jpg" alt="" class="img-fluid">
+
+                    </div>
+
+                </div>
+
+                <hr class="main-grad">
+
+            </div>    
+        </div>    
+    </div>    
+
+
+</section>        
+        <section id="LatestNews" v-vpshow>
+
+    <h2>
+        <span>Featured News</span>
+
+    </h2>
+
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col">
+
+                <div class="articles">
+
+
+                    <a href="http://warnerbrosgames.com/article/warner-bros-games-and-dc-announce-suicide-squad-kill-the-justice-league" 
+   aria-label="Visit WARNER BROS. GAMES AND DC ANNOUNCE SUICIDE SQUAD: KILL THE JUSTICE LEAGUE"
+   class="article">
+
+    <hr class="main-grad">
+
+    <div class="wrap">
+
+        <div class="img-wrap">
+
+            <img src="https://cdn.wbgames.com/media/454/conversions/thumb_1598489928-sized.jpg" alt="WARNER BROS. GAMES AND DC ANNOUNCE SUICIDE SQUAD: KILL THE JUSTICE LEAGUE thumbnail" class="img-fluid">
+            <img src="https://cdn.wbgames.com/media/455/conversions/thumb_hover_1598489939-sized.jpg" alt="WARNER BROS. GAMES AND DC ANNOUNCE SUICIDE SQUAD: KILL THE JUSTICE LEAGUE thumbnail 2" class="img-fluid dup">
+
+        </div>
+
+        <div class="meta">
+
+            <h5>Suicide Squad: Kill the Justice League </h5>
+
+            <h3>
+                WARNER BROS. GAMES AND DC ANNOUNCE SUICIDE SQUAD: KILL THE JUSTICE LEAGUE 
+            </h3>
+
+            <div class="readmore">
+                Read More
+                <font-awesome-icon :icon="['far', 'angle-double-right']" fixed-width></font-awesome-icon>
+            </div>
+
+        </div>
+    </div>
+
+    <hr class="main-grad">
+
+</a>
+
+
+                    <a href="http://warnerbrosgames.com/article/warner-bros-games-and-dc-announce-gotham-knights" 
+   aria-label="Visit WARNER BROS. GAMES AND DC ANNOUNCE  GOTHAM KNIGHTS"
+   class="article">
+
+    <hr class="main-grad">
+
+    <div class="wrap">
+
+        <div class="img-wrap">
+
+            <img src="https://cdn.wbgames.com/media/449/conversions/thumb_1598488606-sized.jpg" alt="WARNER BROS. GAMES AND DC ANNOUNCE  GOTHAM KNIGHTS thumbnail" class="img-fluid">
+            <img src="https://cdn.wbgames.com/media/450/conversions/thumb_hover_1598488647-sized.jpg" alt="WARNER BROS. GAMES AND DC ANNOUNCE  GOTHAM KNIGHTS thumbnail 2" class="img-fluid dup">
+
+        </div>
+
+        <div class="meta">
+
+            <h5>Gotham Knights </h5>
+
+            <h3>
+                WARNER BROS. GAMES AND DC ANNOUNCE  GOTHAM KNIGHTS 
+            </h3>
+
+            <div class="readmore">
+                Read More
+                <font-awesome-icon :icon="['far', 'angle-double-right']" fixed-width></font-awesome-icon>
+            </div>
+
+        </div>
+    </div>
+
+    <hr class="main-grad">
+
+</a>
+
+
+                    <a href="http://warnerbrosgames.com/article/official-mortal-kombat-11-aftermath-announcement" 
+   aria-label="Visit Official Mortal Kombat 11: Aftermath Announcement"
+   class="article">
+
+    <hr class="main-grad">
+
+    <div class="wrap">
+
+        <div class="img-wrap">
+
+            <img src="https://cdn.wbgames.com/media/445/conversions/thumb_1588791586-sized.jpg" alt="Official Mortal Kombat 11: Aftermath Announcement thumbnail" class="img-fluid">
+            <img src="https://cdn.wbgames.com/media/446/conversions/thumb_hover_1588791600-sized.jpg" alt="Official Mortal Kombat 11: Aftermath Announcement thumbnail 2" class="img-fluid dup">
+
+        </div>
+
+        <div class="meta">
+
+            <h5>Mortal Kombat 11: Aftermath </h5>
+
+            <h3>
+                Official Mortal Kombat 11: Aftermath Announcement 
+            </h3>
+
+            <div class="readmore">
+                Read More
+                <font-awesome-icon :icon="['far', 'angle-double-right']" fixed-width></font-awesome-icon>
+            </div>
+
+        </div>
+    </div>
+
+    <hr class="main-grad">
+
+</a>
+
+
+                    <a href="http://warnerbrosgames.com/article/monolith-productions-celebrates-25-years-of-videogame-history" 
+   aria-label="Visit Monolith Productions Celebrates 25 Years of Videogame History"
+   class="article">
+
+    <hr class="main-grad">
+
+    <div class="wrap">
+
+        <div class="img-wrap">
+
+            <img src="https://cdn.wbgames.com/media/432/conversions/thumb_1578520585-sized.jpg" alt="Monolith Productions Celebrates 25 Years of Videogame History thumbnail" class="img-fluid">
+            <img src="https://cdn.wbgames.com/media/431/conversions/thumb_hover_1578520568-sized.jpg" alt="Monolith Productions Celebrates 25 Years of Videogame History thumbnail 2" class="img-fluid dup">
+
+        </div>
+
+        <div class="meta">
+
+            <h5>Monolith Productions </h5>
+
+            <h3>
+                Monolith Productions Celebrates 25 Years of Videogame History 
+            </h3>
+
+            <div class="readmore">
+                Read More
+                <font-awesome-icon :icon="['far', 'angle-double-right']" fixed-width></font-awesome-icon>
+            </div>
+
+        </div>
+    </div>
+
+    <hr class="main-grad">
+
+</a>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</section>        
+        <section id="SearchNews" class="news sort-bar" v-vpshow>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col">
+
+                <hr class="main-grad">
+
+                <div class="options"  v-collapse="{ trigger: '.label' }">
+                    <div class="label">
+                        <div class="arrow left d-none"></div>
+
+                        <div class="bg">
+                            Search News
+                            <span class="icon d-lg-none">
+
+                                <font-awesome-icon :icon="['fal', 'angle-down']" fixed-width></font-awesome-icon>
+
+                            </span>
+                        </div>
+
+                        <div class="arrow d-none d-lg-block"></div>
+                    </div>
+                    <div class="wrap">
+
+                    <a href="http://warnerbrosgames.org/news" aria-label="Visit All News">
+
+                        <div class="title-flip">
+                            <div>
+                                <div>All News</div>
+                                <div>All News</div>
+                            </div>
+                        </div>
+                        <font-awesome-icon :icon="['fal', 'angle-right']" fixed-width></font-awesome-icon>
+                    </a>
+
+
+                        <a href="http://warnerbrosgames.org/news/mortal-kombat" 
+                           class=""
+                           aria-label="Visit Mortal Kombat">
+                            <div class="title-flip">
+                                <div>
+                                    <div>Mortal Kombat</div>
+                                    <div>Mortal Kombat</div>
+                                </div>
+                            </div>
+                            <font-awesome-icon :icon="['fal', 'angle-right']" fixed-width></font-awesome-icon>
+                        </a>
+
+
+                        <a href="http://warnerbrosgames.org/news/harry-potter" 
+                           class=""
+                           aria-label="Visit Harry Potter">
+                            <div class="title-flip">
+                                <div>
+                                    <div>Harry Potter</div>
+                                    <div>Harry Potter</div>
+                                </div>
+                            </div>
+                            <font-awesome-icon :icon="['fal', 'angle-right']" fixed-width></font-awesome-icon>
+                        </a>
+
+
+                        <a href="http://warnerbrosgames.org/news/LEGO" 
+                           class=""
+                           aria-label="Visit LEGO®">
+                            <div class="title-flip">
+                                <div>
+                                    <div>LEGO®</div>
+                                    <div>LEGO®</div>
+                                </div>
+                            </div>
+                            <font-awesome-icon :icon="['fal', 'angle-right']" fixed-width></font-awesome-icon>
+                        </a>
+
+
+                        <a href="http://warnerbrosgames.org/news/back-4-blood" 
+                           class=""
+                           aria-label="Visit Back 4 Blood">
+                            <div class="title-flip">
+                                <div>
+                                    <div>Back 4 Blood</div>
+                                    <div>Back 4 Blood</div>
+                                </div>
+                            </div>
+                            <font-awesome-icon :icon="['fal', 'angle-right']" fixed-width></font-awesome-icon>
+                        </a>
+
+
+                    </div>
+                </div>
+
+                <hr class="main-grad">
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>        
+        <section id="CreateWithUs" v-vpshow>
+
+    <h2><span>Create With Us</span></h2>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col">
+
+
+                <div class="links">
+
+                    <a  href="http://warnerbrosgames.org/careers" class="link" aria-label="Visit Careers">
+
+                        <hr class="main-grad">
+
+                        <div class="wrap">
+
+                            <div class="img-wrap">
+                            <img src="https://cdn.wbgames.com/static/wb-life.jpg" alt="" class="img-fluid">
+                            <img src="https://cdn.wbgames.com/static/wb-life2.jpg" alt="" class="img-fluid dup">
+                            </div>
+
+                            <div class="meta">
+                                <div class="bg"></div>
+                                <h3>
+                                    Careers
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+                        <hr class="main-grad">
+
+                    </a>
+
+                    <a  href="http://playtest.wbgames.com" class="link" aria-label="Visit Playtest">
+
+                        <hr class="main-grad">
+
+                        <div class="wrap">
+                            <div class="img-wrap">
+                            <img src="https://cdn.wbgames.com/static/create-with-us-playtest.jpg" alt="" class="img-fluid">
+                            <img src="https://cdn.wbgames.com/static/create-with-us-playtest-2.jpg" alt="" class="img-fluid dup">
+                            </div>
+                            <div class="meta">
+                                <div class="bg"></div>
+                                <h3>
+                                    Playtest
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+                        <hr class="main-grad">
+
+                    </a>
+
+
+                    <a href="http://warnerbrosgames.org/careers#Locations" class="link" aria-label="Visit Studios">
+
+                        <hr class="main-grad">
+
+                        <div class="wrap">
+                            <div class="img-wrap">
+                            <img src="https://cdn.wbgames.com/static/studios.jpg" alt="" class="img-fluid">
+                            <img src="https://cdn.wbgames.com/static/studios2.jpg" alt="" class="img-fluid dup">
+                            </div>
+                            <div class="meta">
+                                <div class="bg"></div>
+                                <h3>
+                                    Studios
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+                        <hr class="main-grad">
+
+                    </a>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>        
+        <section id="JoinTheConversation" v-vpshow>
+
+    <h2>
+        <span>
+        Join the Conversation
+        </span>
+    </h2>
+
+    <div class="socials">
+
+        <a 
+           href="https://www.facebook.com/wbgames/"
+           title="Facebook"
+           target="_blank"
+           rel="noopener"
+           aria-label="Visit our Facebook page."
+           data-toggle="tooltip" data-placement="bottom">
+            <font-awesome-icon :icon="['fab', 'facebook']" fixed-width></font-awesome-icon>
+
+        </a>
+
+        <a 
+           href="https://twitter.com/wbgames"
+           title="Twitter"
+           target="_blank"
+           rel="noopener"
+           aria-label="Visit our Twitter page."
+           data-toggle="tooltip" data-placement="bottom">
+            <font-awesome-icon :icon="['fab', 'twitter']" fixed-width></font-awesome-icon>
+
+        </a>
+
+
+
+
+
+
+
+
+
+        <a 
+           href="https://www.youtube.com/user/WBGAMES"
+           title="YouTube"
+           target="_blank"
+           rel="noopener"
+           aria-label="Visit our YouTube page."
+           data-toggle="tooltip" data-placement="bottom">
+            <font-awesome-icon :icon="['fab', 'youtube']" fixed-width></font-awesome-icon>
+        </a>
+
+        <a
+            href="https://www.twitch.tv/wbgameslive"
+            title="Twitch"
+            target="_blank"
+            rel="noopener"
+            aria-label="Visit our Twitch page."
+            data-toggle="tooltip" data-placement="bottom">
+        <font-awesome-icon :icon="['fab', 'twitch']" fixed-width></font-awesome-icon>
+
+        </a>
+
+        <a
+            href="https://www.instagram.com/wbgames/?hl=en"
+            title="Instagram"
+            target="_blank"
+            rel="noopener"
+            aria-label="Visit our Instagram page."
+            data-toggle="tooltip" data-placement="bottom">
+        <font-awesome-icon :icon="['fab', 'instagram']" fixed-width></font-awesome-icon>
+
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</section>
+    </div>
+
+
+            </div>
+
+            <footer  role="contentinfo">
+    <hr class="main-grad">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-8 offset-lg-2">
+
+                <div class="legal">
+
+                    <div>
+
+                        <img src="https://cdn.wbgames.com/static/wb-shield.svg" alt="WB">
+
+                        <span>WB GAMES LOGO, WB SHIELD: ™ & © Warner Bros. Entertainment Inc.<br/>
+All other trademarks and copyrights are the property of their respective owners. All rights reserved.<br/>
+(s23)</span>
+
+                    </div>
+
+                </div>
+
+                <div class="footer-links">
+
+                    <span id="dnsDiv" style="display: none;">
+
+                    <a class="optanon-toggle-display" data-ignore-geolocation="true" href="javascript:void(0);">
+                        Do Not Sell My Info
+                    </a>
+
+                    </span>
+
+                    <a href="https://go.wbgames.com/privacy-center" rel="noopener"
+                       aria-label="Visit the privacy center."
+                       target="_blank">Privacy Policy</a>
+
+                    <a href="https://go.wbgames.com/terms-of-use" rel="noopener"
+                       aria-label="Visit the terms of use page."
+                       target="_blank">Terms of Use</a>
+
+                    <a href=https://go.wbgames.com/ad-choices" rel="noopener"
+                       aria-label="Visit the ad choices page."
+                       target="_blank">Ad Choices</a>
+
+                </div>
+
+            </div>
+
+        </div>    
+
+    </div>    
+
+</footer>            
+            <transition name="modal">
+
+                <div class="modal-mask" id="MobileMenu" style="opacity: 0" v-show="$store.state.mobileSearchOn || $store.state.showMobileMenu">
+                </div>
+
+            </transition>
+
+            <mobile-nav-panel
+                    home-route="http://warnerbrosgames.org"
+                    games-route="http://warnerbrosgames.org/games"
+                    news-route="http://warnerbrosgames.org/news"
+                    careers-route="http://warnerbrosgames.org/careers"
+                    support-route="http://warnerbrosgames.org/support"
+                    current-route="home"
+                    show-route="true"
+                    v-if="$store.state.showMobileMenu"
+                    @showe="$store.commit('showEmailSignup',true)"
+                    @showsupport="$store.commit('showMobileSupportMenu',true)"
+                    @launch-player-one="handlePlayerOneLaunch"
+            ></mobile-nav-panel>
+
+            <mobile-support-menu
+                    v-show="$store.state.showMobileSupportMenu"
+                    :show="$store.state.showMobileSupportMenu"
+            ></mobile-support-menu>
+
+            <email-signup
+                    v-if="$store.state.showEmailSignup"
+                    :show="$store.state.showEmailSignup"
+                    locale="en-US"
+
+            ></email-signup>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <script src="js/webridge_0.3.0.js" data-wb-network-bridge></script>
+
+        <script src="js/vendor.js"></script>
+
+
+        <script src="js/app.js"></script>
+
+
+    <script></script>
+
+    </body>
 </html>
